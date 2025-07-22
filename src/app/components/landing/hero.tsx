@@ -6,7 +6,7 @@ const Hero = () => {
           <p className="text-3xl font-black leading-[1.1] max-w-5xl text-white">Već od 150€</p>
         </div>
         <p className="text-7xl font-black leading-[1.1] max-w-5xl text-white">
-          Investirajte u nekretnine i uživajte u pasivnom
+          Uložite u nekretnine i uživajte u pasivnom
           prihodu od 30% godišnje
         </p>
         <div className="flex gap-5">
