@@ -32,9 +32,9 @@ const Team = () => {
         <p className="mb-7">Nase iskusvo stoji iza naeg uspeha i Vaseg profita.</p>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
           {team.map((member, index) => (
-            <div key={index} className="overflow-hidden rounded-xs border border-zinc-300">
-              <img src={member.image} alt={member.name} />
-              <div className="p-3 bg-[#242424] text-white">
+            <div key={index} className="overflow-hidden rounded-xs">
+              <img className="border border-b-0 border-zinc-300" src={member.image} alt={member.name} />
+              <div className="p-3 bg-[#242424] text-white h-full">
                 <h3 className="text-lg font-bold">{member.name}</h3>
                 <p className="text-sm">{member.position}</p>
               </div>
