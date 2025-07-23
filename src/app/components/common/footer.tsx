@@ -11,7 +11,7 @@ const Footer = () => {
         </div>
         <div className="max-w-md">
           <div className="mb-10">
-            <h3 className="text-xl font-bold mb-5">Kontakt</h3>
+            <h3 id="kontakt" className="text-xl font-bold mb-5">Kontakt</h3>
             <p className="mb-1">
               <span className="font-bold">Email:</span> <a href="mailto:contact@decimetarkvadratni.com">contact@decimetarkvadratni.com</a>
             </p>

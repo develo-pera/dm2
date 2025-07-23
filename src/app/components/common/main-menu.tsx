@@ -9,7 +9,7 @@ const MainMenu = () => {
         <Link href="#dm2-token">dm<sup>2</sup> token</Link>
         <Link href="#kalkulator">Kalkulator</Link>
         <Link href="#planirani-projekti">Planirani projekti</Link>
-        <Link href="#ceo-postavljana-pitanja">Često postavljana pitanja</Link>
+        <Link href="#cesto-postavljana-pitanja">Često postavljana pitanja</Link>
         <Link href="#o-nama">O nama</Link>
         <Link href="#kontakt">Kontakt</Link>
       </nav>
