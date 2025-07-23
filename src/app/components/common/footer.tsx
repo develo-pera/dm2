@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-zinc-100 text-black">
+    <div className="bg-zinc-100/50 text-black">
       <div className="max-w-7xl mx-auto p-5 py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15">
         <div className="max-w-md">
           <Image src="/dm2-logo.svg" alt="dm2" width={250} height={100} />
