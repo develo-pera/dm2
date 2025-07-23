@@ -5,7 +5,7 @@ const About = () => {
     <div id="sta-je-dm2" className="max-w-7xl mx-auto p-5 py-20">
       <div className="grid grid-cols-2 gap-5">
         <div className="col-span-2 lg:col-span-1">
-          <h2 className="text-4xl font-bold mb-7">Šta je dm<sup>2</sup>?</h2>
+          <h2 className="text-4xl font-bold mb-7">Šta je dm<sup>2</sup></h2>
           <p className="mb-3">
             Decimetar kvadratni je investiranje u nekretnine dostupno
             svima. Kroz usitnjavanje, tj. frakcionisanje ukupne površine nekretnine

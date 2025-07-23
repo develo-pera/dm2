@@ -1,7 +1,7 @@
 const HowItWorks = () => {
   return (
     <div id="kako-radi-dm2" className="max-w-7xl mx-auto p-5 py-20">
-      <h2 className="text-4xl font-bold mb-7">Kako radi dm<sup>2</sup>?</h2>
+      <h2 className="text-4xl font-bold mb-7">Kako radi dm<sup>2</sup></h2>
       <p>Sam koncept je vrlo jednostavan i ne razilukuje se puno od standardnog nacina gde jedan veliki investitor ulaze u ceo projekat.</p>
       <p>Najveca razlike je u tome zapravo sto umesto jednog u nasem slucaju ma vise manjih investitora, ko nosi teret samih projekata tokom projektovanja i izgradnje, i na koji nacin se deli profit.</p>
 
@@ -67,7 +67,6 @@ const HowItWorks = () => {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );
