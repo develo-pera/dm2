@@ -1,11 +1,11 @@
-import { LucideBadgeEuro, LucideDollarSign, LucidePercent, LucideReceiptEuro } from "lucide-react";
+import { LucideBuilding2, LucidePercent, LucideReceiptEuro } from "lucide-react";
 
 const About = () => {
   return (
     <div id="sta-je-dm2" className="max-w-7xl mx-auto p-5 py-20">
       <div className="grid grid-cols-2 gap-5">
-        <div>
-          <p className="text-4xl font-bold mb-7">Šta je dm<sup>2</sup>?</p>
+        <div className="col-span-2 lg:col-span-1">
+          <h2 className="text-4xl font-bold mb-7">Šta je dm<sup>2</sup>?</h2>
           <p className="mb-3">
             Decimetar kvadratni je investiranje u nekretnine dostupno
             svima. Kroz usitnjavanje, tj. frakcionisanje ukupne površine nekretnine
@@ -23,12 +23,12 @@ const About = () => {
             dešava u projektnoj fazi, što znači da dobijate najbolju moguću cenu,
             a profit se realizuje nakon prodaje nekretnine krajnjem kupcu.
           </p>
+          <p className="text-2xl mt-15 mb-5 font-bold">U dm<sup>2</sup> je moguće investirati na dva načina</p>
         </div>
-
+        <div className="lg:block hidden bg-[#FEE600] p-5 md:p-10 rounded-xs" />
       </div>
 
-      <p className="text-2xl mt-15 font-bold">U dm<sup>2</sup> je moguće investirati na dva načina</p>
-      <div className="grid grid-cols-2 gap-5 mt-10">
+      <div className="grid sm:grid-rows-[1fr_1fr] md:grid-rows-1 md:grid-cols-2 gap-5 mt-5">
         <div className="bg-zinc-100 p-5 md:p-10 rounded-xs flex flex-col gap-5">
           <p className="font-bold text-lg uppercase mb-3">Direktna investicija u projekte</p>
           <p>
@@ -43,11 +43,14 @@ const About = () => {
           </p>
           <p>Ovaj vid investicije prestavlja istinski pasivan prihod, a pored toga sami tokeni donose dodatne pogodnosti svojim vlasnicima kao što su:</p>
           <div className="grid grid-cols-[20px_1fr] items-center gap-y-3 gap-x-5">
+            <LucideBuilding2 className="!w-5 !h-5 stroke-[#FEE600]" />
+            <p className="leading-tight">Eksluzivne prilike za investiranje dostupne samo vlasnicima tokena</p>
+
             <LucidePercent className="!w-5 !h-5 stroke-[#FEE600]" />
             <p className="leading-tight">Povoljnija cena prilikom direktne investicije</p>
 
             <LucideReceiptEuro className="!w-5 !h-5 stroke-[#FEE600]" />
-            <p className="leading-tight">Mogućnost prodaje token u bilo kom trenutku po istoj ili većoj ceni od one koju su kupili</p>
+            <p className="leading-tight">Mogućnost prodaje tokena u bilo kom trenutku po istoj ili većoj ceni od one koju su kupili</p>
           </div>
         </div>
       </div>
