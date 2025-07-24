@@ -32,7 +32,7 @@ const About = () => {
         <div className="bg-zinc-100 p-5 md:p-10 rounded-xs flex flex-col gap-5">
           <p className="font-bold text-lg uppercase mb-3">Direktna investicija u projekte</p>
           <p>
-            Kroz našu platformu investitori mogu da ulože svoj novac direktno u građevinske projekte, tj. stambeno-poslovne komplekse u veoma najranijoj fazi.</p>
+            Kroz našu platformu investitori mogu da ulože svoj novac direktno u građevinske projekte, tj. stambeno-poslovne komplekse, hotele, kancelarije, poslovne centre, itd. u najranijoj fazi.</p>
           <p>Veličina investicije kreće od cene jedne desetine kvadrata u izgradnji, tj. decimetra kvadratnog, a moguće je investirati u više decimetara ili metara kvadratnih, pa do čak i jednu ili više celokupnih jedinica.
           </p>
         </div>
