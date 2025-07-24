@@ -41,7 +41,7 @@ const HowItWorks = () => {
         <p className="text-2xl font-bold mb-7">Raspodela profita</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div>
-            <p className="mb-3">Raspodelu profita na investitore u projekat, nosioca projekta i investiore u dm<sup>2</sup> digitalne tokene najlakse mozemo objasniti na pojednostavljenom primeru stambene zgrade od 10.000m<sup>2</sup> ukupne povrsine, sa cenom kvadrata u izgradnji od 1000€ i prodajnom cenom od 1500€.</p>
+            <p className="mb-3">Raspodelu profita na investitore u projekat, nosioca projekta i investiore u dm<sup>2</sup> digitalne tokene najlakse mozemo objasniti na reprezentativnom primeru stambene zgrade od 10.000m<sup>2</sup> ukupne povrsine, sa cenom kvadrata u izgradnji od 1000€ i prodajnom cenom od 1500€.</p>
             <p className="mb-3">Od ostvarenog profita od prodaje, 300€ se deli na investitore u projekat, 100€ na investitore u token i 100€ na nosioca projekta.</p>
             <p className="mb-3">Inicijalnih 1000€ po kvadratu se vraca investitorima u projekat, sto znaci da dobijaju ukupno 1300€ po kvadratu.</p>
             <p>

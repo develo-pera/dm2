@@ -8,6 +8,7 @@ import Footer from "./components/common/footer";
 import Faq from "./components/landing/faq";
 import Team from "./components/landing/team";
 import Projects from "./components/landing/projects";
+import Calculator from "./components/landing/calculator";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <About />
       <HowItWorks />
       <Token />
+      <Calculator />
       <Projects />
       <Faq />
       <Team />
