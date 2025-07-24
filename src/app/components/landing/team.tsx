@@ -29,7 +29,7 @@ const Team = () => {
     <div id="o-nama">
       <div className="max-w-7xl mx-auto p-5 py-20">
         <h2 className="text-4xl font-bold mb-3">dm<sup>2</sup> tim</h2>
-        <p className="mb-7">Nase iskusvo stoji iza naeg uspeha i Vaseg profita.</p>
+        <p className="mb-7">Naše iskustvo stoji iza našeg uspeha i Vašeg profita.</p>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
           {team.map((member, index) => (
             <div key={index} className="overflow-hidden rounded-xs">

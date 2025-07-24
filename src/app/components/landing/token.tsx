@@ -17,10 +17,10 @@ const Token = () => {
             <p className="mb-3">Samim tim investicija u dm<sup>2</sup> tokene predstavlja investiciju niskog rizika.</p>
             <p>Svoje tokene, ostvarenu zaradu i profit, kao i prodaju tokena mozete pratiti i izvrsiti na svom dm<sup>2</sup> nalogu unutar dm<sup>2</sup> platforme.</p>
           </div>
-          <Image src="/dm2-platforma-2.png" alt="dm2 platforma" width={1200} height={500} className="lg:inline-block hidden" />
+          <Image src="/dm2-platforma-2.png" alt="dm2 platforma" width={1200} height={500} className="lg:inline-block hidden rounded-xs" />
         </div>
         <p className="mb-5 font-bold">Prijavi se na listu cekanja odmah i kupi dm<sup>2</sup> tokene po najpovoljnijim uslovima.</p>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           <button className="bg-zinc-100 p-3 rounded-xs font-bold">Procitaj Beli papir</button>
           <button className="bg-[#242424] text-white p-3 rounded-xs font-bold">Prijavi se na listu cekanja</button>
         </div>

@@ -7,6 +7,7 @@ import Token from "./components/landing/token";
 import Footer from "./components/common/footer";
 import Faq from "./components/landing/faq";
 import Team from "./components/landing/team";
+import Projects from "./components/landing/projects";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <HowItWorks />
       <Token />
+      <Projects />
       <Faq />
       <Team />
       <Footer />
