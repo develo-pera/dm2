@@ -1,4 +1,5 @@
 import Image from "next/image";
+import WaitlistDialog from "../waitlist-dialog";
 
 const Token = () => {
   return (
@@ -22,7 +23,9 @@ const Token = () => {
         <p className="mb-5 font-bold">Prijavi se na listu cekanja odmah i kupi dm<sup>2</sup> tokene po najpovoljnijim uslovima.</p>
         <div className="flex flex-wrap gap-2">
           <button className="bg-zinc-100 px-8 py-3 rounded-xs font-bold">Procitaj Beli papir</button>
-          <button className="bg-[#242424] text-white px-8 py-3 rounded-xs font-bold">Prijavi se na listu cekanja</button>
+          <WaitlistDialog>
+            <div className="bg-[#242424] text-white px-8 py-3 rounded-xs font-bold">Prijavi se na listu cekanja</div>
+          </WaitlistDialog>
         </div>
       </div>
     </div>

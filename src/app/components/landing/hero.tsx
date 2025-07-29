@@ -1,3 +1,5 @@
+import WaitlistDialog from "../waitlist-dialog";
+
 const Hero = () => {
   return (
     <div className="bg-[url('/dm2bg.png')] bg-cover bg-top">
@@ -10,9 +12,11 @@ const Hero = () => {
           prihodu i do 30% godišnje
         </h1>
         <div className="flex flex-wrap gap-5 mt-10">
-          <button className="bg-[#FEE600] font-bold px-8 py-3 rounded-xs">
-            Prijavite se na listu čekanja
-          </button>
+          <WaitlistDialog>
+            <div className="bg-[#FEE600] font-bold px-8 py-3 rounded-xs">
+              Prijavite se na listu čekanja
+            </div>
+          </WaitlistDialog>
           <button className=" bg-white font-bold px-8 py-3 rounded-xs">
             Saznajte više
           </button>

@@ -1,0 +1,31 @@
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+
+const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <Dialog>
+      <DialogTrigger>{children}</DialogTrigger>
+      <DialogContent className="rounded-xs">
+        <DialogHeader>
+          <DialogTitle className="text-xl font-bold mt-5">Prijavite se na listu cekanja za kupovinu dm<sup>2</sup> tokena</DialogTitle>
+          <DialogDescription className="mb-5">
+            Prijavite se na listu cekanja da biste dobili prvu poruku o otvaranju prodaje kako ne biste propustili priliku da kupite tokene po prodajnoj ceni.
+          </DialogDescription>
+        </DialogHeader>
+        <div>
+          <p>Ime i prezime</p>
+          <input className="border border-zinc-200 rounded-xs p-2 w-full mb-3" type="text" placeholder="Ime" />
+          <p>Email</p>
+          <input className="border border-zinc-200 rounded-xs p-2 w-full mb-3" type="text" placeholder="Email" />
+          <p>Telefon</p>
+          <input className="border border-zinc-200 rounded-xs p-2 w-full mb-3" type="text" placeholder="Telefon" />
+          <p>Koliko evra biste bili spremni da ulozite?</p>
+          <input className="border border-zinc-200 rounded-xs p-2 w-full" type="text" placeholder="Iznos investicije u evrima" />
+
+          <button className="bg-[#FEE600] font-bold px-8 py-3 rounded-xs w-full mt-10">Prijavi se</button>
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
+};
+
+export default WaitlistDialog;

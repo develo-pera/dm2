@@ -1,4 +1,5 @@
 import { PhoneCall } from "lucide-react";
+import WaitlistDialog from "../waitlist-dialog";
 
 const NavigationCtaAndContact = () => {
   return (
@@ -7,9 +8,11 @@ const NavigationCtaAndContact = () => {
         <PhoneCall className="h-[20px]" />
         <p className="font-bold">+381 62 626262</p>
       </div>
-      <button className="bg-[#FEE600] font-bold px-8 py-3 rounded-xs">
-        Uložite u nekretnine
-      </button>
+      <WaitlistDialog>
+        <div className="bg-[#FEE600] font-bold px-8 py-3 rounded-xs">
+          Uložite u nekretnine
+        </div>
+      </WaitlistDialog>
     </div>
   );
 };
