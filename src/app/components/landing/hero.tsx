@@ -1,3 +1,4 @@
+import Link from "next/link";
 import WaitlistDialog from "../waitlist-dialog";
 
 const Hero = () => {
@@ -17,9 +18,11 @@ const Hero = () => {
               Prijavite se na listu čekanja
             </div>
           </WaitlistDialog>
-          <button className=" bg-white font-bold px-8 py-3 rounded-xs">
-            Saznajte više
-          </button>
+          <Link href="#sta-je-dm2">
+            <button className=" bg-white font-bold px-8 py-3 rounded-xs">
+              Saznajte više
+            </button>
+          </Link>
         </div>
       </div>
     </div>
