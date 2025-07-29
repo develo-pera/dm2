@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 
 const TokenCalculator = () => {
   const [initialInvestment, setInitialInvestment] = useState(150);
-  const [constructionPrice, setConstructionPrice] = useState(0);
-  const [salePrice, setSalePrice] = useState(0);
+  const [constructionPrice, setConstructionPrice] = useState(2250);
+  const [salePrice, setSalePrice] = useState(2950);
   const [numberOfProjects, setNumberOfProjects] = useState(1);
 
   const calculateProfit = () => {
@@ -49,9 +49,9 @@ const TokenCalculator = () => {
         <p className="text-2xl font-bold mb-2">{initialInvestment} eur</p>
         <p className="mb-2">Broj realizovanih projekata</p>
         <div className="grid grid-cols-4 max-w-[150px] mb-4">
-          <div className="bg-zinc-600/50 rounded-l-xs p-2 flex items-center justify-center cursor-pointer" onClick={() => checkNumberOfProjectsAfterChange(numberOfProjects + 1)}>+</div>
-          <div className="bg-zinc-500 p-2 col-span-2 flex items-center justify-center">{numberOfProjects}</div>
           <div className="bg-zinc-600/50 rounded-r-xs p-2 flex items-center justify-center cursor-pointer" onClick={() => checkNumberOfProjectsAfterChange(numberOfProjects - 1)}>-</div>
+          <div className="bg-zinc-500 p-2 col-span-2 flex items-center justify-center">{numberOfProjects}</div>
+          <div className="bg-zinc-600/50 rounded-l-xs p-2 flex items-center justify-center cursor-pointer" onClick={() => checkNumberOfProjectsAfterChange(numberOfProjects + 1)}>+</div>
         </div>
         <p>Vas profit nakon {numberOfProjects} realizovanih projekata</p>
         <p className="text-4xl text-[#fee600] font-bold">{calculateProfit()} eur</p>
