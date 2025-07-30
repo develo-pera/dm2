@@ -1,5 +1,5 @@
 import Image from "next/image";
-import WaitlistDialog from "../waitlist-dialog";
+import WaitlistDialog from "../common/waitlist-dialog";
 
 const Token = () => {
   return (
@@ -18,7 +18,7 @@ const Token = () => {
             <p className="mb-3">Samim tim investicija u dm<sup>2</sup> tokene predstavlja investiciju niskog rizika.</p>
             <p>Svoje tokene, ostvarenu zaradu i profit, kao i prodaju tokena mozete pratiti i izvrsiti na svom dm<sup>2</sup> nalogu unutar dm<sup>2</sup> platforme.</p>
           </div>
-          <Image src="/dm2-platforma-2.png" alt="dm2 platforma" width={1200} height={500} className="lg:inline-block hidden rounded-xs" />
+          <Image src="/dm2-platforma2.png" alt="dm2 platforma" width={1200} height={500} className="lg:inline-block rounded-xs" />
         </div>
         <p className="mb-5 font-bold">Prijavi se na listu cekanja odmah i kupi dm<sup>2</sup> tokene po najpovoljnijim uslovima.</p>
         <div className="flex flex-wrap gap-2">

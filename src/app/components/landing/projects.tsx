@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react";
-import WaitlistDialog from "../waitlist-dialog";
+import WaitlistDialog from "../common/waitlist-dialog";
 
 const images = [
   "/pp-1.webp",

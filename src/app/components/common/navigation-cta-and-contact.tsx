@@ -1,5 +1,5 @@
 import { PhoneCall } from "lucide-react";
-import WaitlistDialog from "../waitlist-dialog";
+import WaitlistDialog from "./waitlist-dialog";
 
 const NavigationCtaAndContact = () => {
   return (

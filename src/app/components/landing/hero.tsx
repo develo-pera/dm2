@@ -1,5 +1,5 @@
 import Link from "next/link";
-import WaitlistDialog from "../waitlist-dialog";
+import WaitlistDialog from "../common/waitlist-dialog";
 
 const Hero = () => {
   return (

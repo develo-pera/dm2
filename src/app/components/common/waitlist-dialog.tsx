@@ -18,7 +18,7 @@ const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
           <input className="border border-zinc-200 rounded-xs p-2 w-full mb-3" type="text" placeholder="Email" />
           <p>Telefon</p>
           <input className="border border-zinc-200 rounded-xs p-2 w-full mb-3" type="text" placeholder="Telefon" />
-          <p>Koliko evra biste bili spremni da ulozite?</p>
+          <p>Koliko biste bili spremni da ulozite u evrima?</p>
           <input className="border border-zinc-200 rounded-xs p-2 w-full" type="text" placeholder="Iznos investicije u evrima" />
 
           <button className="bg-[#FEE600] font-bold px-8 py-3 rounded-xs w-full mt-10">Prijavi se</button>
