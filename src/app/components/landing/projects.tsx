@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import WaitlistDialog from "../common/waitlist-dialog";
+import NewsletterDialog from "../common/newsletter-dialog";
 
 const images = [
   "/pp-1.webp",
@@ -69,7 +70,9 @@ const Projects = () => {
         <div className="mt-10">
           <p>Prijavi se na našu newsletter listu i saznaj cim projekat bude dostupan za ulaganje, ili se prijavi na listu cekanja za token i prihoduj u svakom slucaju.</p>
           <div className="flex flex-wrap gap-3 mt-5">
-            <button className="bg-zinc-100 text-black px-8 py-3 font-bold rounded-xs">Prijavi se na newsletter</button>
+            <NewsletterDialog>
+              <button className="bg-zinc-100 text-black px-8 py-3 font-bold rounded-xs">Prijavi se na newsletter</button>
+            </NewsletterDialog>
             <WaitlistDialog>
               <div className="bg-[#242424] text-white px-8 py-3 font-bold rounded-xs">Prijavi se na listu cekanja za token</div>
             </WaitlistDialog>
