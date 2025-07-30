@@ -2,55 +2,88 @@ const HowItWorks = () => {
   return (
     <div id="kako-radi-dm2" className="max-w-7xl mx-auto p-5 py-20">
       <h2 className="text-4xl font-bold mb-7">Kako radi dm<sup>2</sup></h2>
-      <p>Sam koncept je vrlo jednostavan i ne razilukuje se puno od standardnog nacina gde jedan veliki investitor ulaze u ceo projekat.</p>
-      <p>Najveca razlike je u tome zapravo sto umesto jednog u nasem slucaju ma vise manjih investitora, ko nosi teret samih projekata tokom projektovanja i izgradnje, i na koji nacin se deli profit.</p>
+      <p>
+        Koncept dm<sup>2</sup> je jednostavan: umesto jednog velikog investitora
+        koji finansira ceo projekat, kod nas više manjih investitora
+        zajedno ulaže u izgradnju.
+      </p>
+      <p>
+        Oni zajednički preuzimaju finansiranje u fazi projektovanja i
+        izgradnje, a kada se nekretnina proda – profit se transparentno
+        deli između investitora, vlasnika dm<sup>2</sup> tokena i tima koji vodi projekat.
+      </p>
 
       <div>
-        <p className="text-2xl mt-15 font-bold">Kako izgleda proces od pocetka do kraja na primeru jednog projekta:</p>
+        <p className="text-2xl mt-15 font-bold">Kako izgleda ceo proces:</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mt-7">
           <div className="bg-zinc-100 p-7 md:p-10 rounded-xs md:border-t-3 md:border-[#242424] lg:border-t-3 lg:border-[#FEE600]">
             <p className="font-bold">1. korak</p>
-            <p className="text-xl font-bold mb-3 md:mb-7">Predlog i izrada projekta</p>
-            <p className="text-sm">Ukoliko je projekat u fazi predloga, onda se on izrađuje i predstavlja potencijalnim investitorima na dm<sup>2</sup> platformi.</p>
+            <p className="text-xl font-bold mb-3 md:mb-7">Predlog projekta</p>
+            <p className="text-sm">Svaki projekat započinje idejom. U ovoj fazi se izrađuje predlog i objavljuje na dm<sup>2</sup> platformi kako bi bio predstavljen potencijalnim investitorima.</p>
           </div>
           <div className="bg-zinc-200 p-7 md:p-10 rounded-xs md:border-t-3 md:border-[#FEE600] lg:border-t-3 lg:border-[#242424]">
             <p className="font-bold">2. korak</p>
-            <p className="text-xl font-bold mb-3 md:mb-7">Finansiranje projekta</p>
-            <p className="text-sm">U ovoj fazi moguce je direktno uloziti u sam projekat po ceni kvadarata u izgradnju investiranjem u decimetare kvadratne.</p>
+            <p className="text-xl font-bold mb-3 md:mb-7">Finansiranje</p>
+            <p className="text-sm">Investitori imaju priliku da ulože direktno u projekat po početnoj, najpovoljnijoj ceni kvadrata,  kroz kupovinu decimetara kvadratnih.</p>
           </div>
 
           <div className="bg-zinc-100 md:bg-zinc-200 lg:bg-zinc-100 p-7 md:p-10 rounded-xs lg:border-t-3 lg:border-[#FEE600]">
             <p className="font-bold">3. korak</p>
-            <p className="text-xl font-bold mb-3 md:mb-7">Izgradnja objekta</p>
-            <p className="text-sm">Nakon uspesno zavrsene faze fiansiranaj i prikupljanja minimalne investicije, krece se sa izgradnjom objekata predvidjenih projektom.</p>
+            <p className="text-xl font-bold mb-3 md:mb-7">Izgradnja</p>
+            <p className="text-sm">Nakon što je obezbeđeno minimalno potrebno finansiranje, kreće izgradnja objekta u skladu s projektom.</p>
           </div>
           <div className="bg-zinc-200 md:bg-zinc-100 lg:bg-zinc-200 p-7 md:p-10 rounded-xs lg:border-t-3 lg:border-[#242424]">
             <p className="font-bold">4. korak</p>
-            <p className="text-xl font-bold mb-3 md:mb-7">Prodaja krajnjim kupcima</p>
-            <p className="text-sm">Vrlo brzo nakon zavrsetka finansiranja i pocetka izgradnje pocinje i prodaja nekretnina krajnjim kupcima.</p>
+            <p className="text-xl font-bold mb-3 md:mb-7">Prodaja</p>
+            <p className="text-sm">Već tokom izgradnje započinje prodaja nepokretnosti krajnjim kupcima po tržišnim cenama.</p>
           </div>
           <div className="bg-zinc-100 p-7 md:p-10 rounded-xs lg:border-t-3 lg:border-[#FEE600]">
             <p className="font-bold">5. korak</p>
-            <p className="text-xl font-bold mb-3 md:mb-7">Raspodela profita</p>
-            <p className="text-sm">Profit od prdaje se deli na investitore u projekat, nosioca projekta i investitore u dm<sup>2</sup> digitalne tokene u realnom vremenu.</p>
+            <p className="text-xl font-bold mb-3 md:mb-7">Deljenje profita</p>
+            <p className="text-sm">Zarada od prodaje se deli između investitora u projekat, vlasnika dm<sup>2</sup> tokena i tima koji vodi realizaciju, sve transparentno i u realnom vremenu.</p>
           </div>
         </div>
       </div>
 
       <div className="mt-15">
-        <p className="text-2xl font-bold mb-7">Raspodela profita</p>
+        <p className="text-2xl font-bold mb-7">Kako se deli profit?</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div>
-            <p className="mb-3">Raspodelu profita na investitore u projekat, nosioca projekta i investiore u dm<sup>2</sup> digitalne tokene najlakse mozemo objasniti na reprezentativnom primeru stambene zgrade od 10.000m<sup>2</sup> ukupne povrsine, sa cenom kvadrata u izgradnji od 1000€ i prodajnom cenom od 1500€.</p>
-            <p className="mb-3">Od ostvarenog profita od prodaje, 300€ se deli na investitore u projekat, 100€ na investitore u token i 100€ na nosioca projekta.</p>
-            <p className="mb-3">Inicijalnih 1000€ po kvadratu se vraca investitorima u projekat, sto znaci da dobijaju ukupno 1300€ po kvadratu.</p>
+            <p className="mb-3">
+              Da bismo Vam jasno pokazali kako funkcioniše zarada, evo jednostavnog primera:
+            </p>
+            <p className="mb-3">
+              Zamislite stambenu zgradu ukupne površine 10.000 m². Cena kvadrata u
+              izgradnji iznosi 1.000€, a prodajna cena je 1.500€ po kvadratu.
+            </p>
+            <p className="mb-3">
+              To znači da se po svakom kvadratu ostvaruje profit od 500€,
+              koji se deli na sledeći način:
+            </p>
+            <div className="mb-3 font-bold">
+              <p>
+                300€ ide investitorima u projekat (30% povrat na investiciju)
+              </p>
+              <p>
+                100€ ide investitorima u dm<sup>2</sup> tokene
+              </p>
+              <p>
+                100€ ide timu koji vodi projekat (nosiocu projekta)
+              </p>
+            </div>
+            <p className="mb-3">
+              Investitorima u projekat se tako vraća njihov ulog od 1.000€ +
+              dodatnih 300€ zarade, što znači da ukupno dobijaju 1.300€ po kvadratu.
+            </p>
             <p>
-              Na ovom primeru vidimo da na samo jednom projektu od 10.000 m<sup>2</sup>, investitori u projekat imaju povracaj investicije od 30%, a investitori u tokene povracaj od ⅔ inicijalne investicije vec nakon prvog projekta.
+              Samo na ovom jednom projektu, investitori ostvaruju 30% povraćaj,
+              dok investitori u tokene dobijaju ⅔ svog inicijalnog ulaganja,
+              već nakon prve realizacije.
             </p>
           </div>
           <div>
             <div className="grid grid-cols-2">
-              <p className="col-span-2 font-bold bg-[#242424] text-white p-3">Kljuc u ruke kvadrat</p>
+              <p className="col-span-2 font-bold bg-[#242424] text-white p-3">Ključ u ruke kvadrat</p>
               <p className="bg-zinc-100 p-3 border-b border-zinc-200">Cena izgradnje</p>
               <p className="bg-zinc-100 p-3 text-right border-b border-zinc-200 flex items-center justify-end">1000€</p>
               <p className="bg-zinc-100 p-3 border-b border-zinc-200 ">Prodajna cena</p>
@@ -62,7 +95,7 @@ const HowItWorks = () => {
               <p className="bg-zinc-100 p-3 border-b border-zinc-200 flex items-center justify-end">300€</p>
               <p className="bg-zinc-100 p-3 border-b border-zinc-200">Investitori u dm<sup>2</sup> token</p>
               <p className="bg-zinc-100 p-3 text-right border-b border-zinc-200 flex items-center justify-end">100€</p>
-              <p className="bg-zinc-100 p-3">Nosioc projekta (dm2)</p>
+              <p className="bg-zinc-100 p-3">Nosioc projekta (dm<sup>2</sup>)</p>
               <p className="bg-zinc-100 p-3 text-right flex items-center justify-end">100€</p>
             </div>
           </div>

@@ -7,21 +7,25 @@ const About = () => {
         <div className="col-span-2 lg:col-span-1">
           <h2 className="text-4xl font-bold mb-7">Šta je dm<sup>2</sup></h2>
           <p className="mb-3">
-            Decimetar kvadratni je investiranje u nekretnine dostupno
-            svima. Kroz usitnjavanje, tj. frakcionisanje ukupne površine nekretnine
-            na decimetre kvadratne, umesto cele nekretnine, možete kupiti samo
-            deo, tj. jedan ili više decimetara kvadratnih.
-          </p>
-          <p className="mb-3">Iako relativno nova na našim prostorima,
-            ovakva vrsta združenog investiranja u nekretnine je dobro oprobana
-            praksa u mnogim zemljama razvijenih tržišta čiji građani poseduju
-            određenu svotu novca koju mogu da investiraju, ali im je kupovina
-            celokupne nekretnine u svrhu investicije i dalje veliki izdatak.
+            dm<sup>2</sup> je model investiranja u nekretnine koji Vam omogućava da ulažete u male delove
+            – decimetre kvadratne – umesto da kupujete celu nekretninu.
           </p>
           <p className="mb-3">
-            Investiranje na našoj platformi se
-            dešava u projektnoj fazi, što znači da dobijate najbolju moguću cenu,
-            a profit se realizuje nakon prodaje nekretnine krajnjem kupcu.
+            Na ovaj način, investiranje u nekretnine više nije rezervisano samo za
+            velike investitore. Već sa 150€, možete postati deo profitabilnih građevinskih
+            projekata i ostvarivati pasivan prihod od prodaje.
+          </p>
+          <p className="mb-3">
+            Koncept frakcionisanog ulaganja u nekretnine već je dobro poznat u razvijenim
+            zemljama poput Ujedinjenih Arapskih Emirata, SAD-a, i Velike Britanije gde ga
+            koriste hiljade malih investitora koji žele da ulože pametno, bez prevelikog
+            rizika. Sada je ovaj model dostupan i kod nas, kroz dm<sup>2</sup> platformu.
+          </p>
+          <p className="mb-3">
+            Ulaganje se dešava u najranijoj, projektnoj fazi, kada su cene najniže.
+            Nakon izgradnje, nekretnine se prodaju krajnjim kupcima, a profit se deli
+            između investitora u projekte, vlasnika dm<sup>2</sup> tokena i samog tima
+            koji vodi realizaciju.
           </p>
           <p className="text-2xl mt-15 mb-5 font-bold">U dm<sup>2</sup> je moguće investirati na dva načina</p>
         </div>
@@ -32,16 +36,26 @@ const About = () => {
         <div className="bg-zinc-100 p-5 md:p-10 rounded-xs flex flex-col gap-5">
           <p className="font-bold text-lg uppercase mb-3">Direktna investicija u projekte</p>
           <p>
-            Kroz našu platformu investitori mogu da ulože svoj novac direktno u građevinske projekte, tj. stambeno-poslovne komplekse, hotele, kancelarije, poslovne centre, itd. u najranijoj fazi.</p>
-          <p>Veličina investicije kreće od cene jedne desetine kvadrata u izgradnji, tj. decimetra kvadratnog, a moguće je investirati u više decimetara ili metara kvadratnih, pa do čak i jednu ili više celokupnih jedinica.
+            Kroz našu platformu investitori mogu da ulože svoj novac direktno u građevinske
+            projekte, tj. stambeno-poslovne komplekse, hotele, kancelarije, poslovne centre,
+            u najranijoj fazi.
+          </p>
+          <p>Veličina investicije kreće od cene jedne desetine kvadrata u izgradnji,
+            tj. decimetra kvadratnog, a moguće je investirati u više decimetara ili
+            metara kvadratnih, pa do jedne ili više celokupnih jedinica.
           </p>
         </div>
         <div className="bg-[#242424] text-white p-5 md:p-10 rounded-xs flex flex-col gap-5">
           <p className="font-bold text-lg uppercase mb-3">Investicija u dm<sup>2</sup> digitalne tokene</p>
           <p>
-            Investicija u dm<sup>2</sup> digitalne tokene omogućava investitorima da ulože svoj novac jedom i dobijaju deo profita od svih realizovanih projekata dokle god drze tokene u sopstvenom vlasnistvu.
+            Investicija u dm<sup>2</sup> digitalne tokene omogućava investitorima da ulože
+            svoj novac jednom i dobijaju deo profita od svih realizovanih projekata dokle
+            god drže tokene u sopstvenom vlasništvu.
           </p>
-          <p>Ovaj vid investicije prestavlja istinski pasivan prihod, a pored toga sami tokeni donose dodatne pogodnosti svojim vlasnicima kao što su:</p>
+          <p>
+            Ovaj vid investicije prestavlja istinski dugoročan pasivan prihod, a pored toga sami
+            tokeni donose dodatne pogodnosti svojim vlasnicima kao što su:
+          </p>
           <div className="grid grid-cols-[20px_1fr] items-center gap-y-3 gap-x-5">
             <LucideBuilding2 className="!w-5 !h-5 stroke-[#FEE600]" />
             <p className="leading-tight">Eksluzivne prilike za investiranje dostupne samo vlasnicima tokena</p>
