@@ -45,8 +45,19 @@ const incise = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "dm2 - Decimetar kvadratni",
-  description: "Decimetar kvadratni je investiranje u nekretnine dostupno svima. Kroz usitnjavanje, tj. frakcionisanje ukupne površine nekretnine na decimetre kvadratne, umesto cele nekretnine, možete kupiti samo deo, tj. jedan ili više decimetara kvadratnih.",
+  title: "Ulaganje u nekretnine već od 150€ - Decimetar kvadratni",
+  description: "Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
+  openGraph: {
+    title: "Ulaganje u nekretnine već od 150€ - Decimetar kvadratni",
+    description: "Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
+    images: "/dm2-og-image.jpg",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ulaganje u nekretnine već od 150€ - Decimetar kvadratni",
+    description: "Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
+    images: "/dm2-og-image.jpg",
+  },
 };
 
 export default function RootLayout({
