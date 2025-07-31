@@ -41,8 +41,8 @@ const Token = () => {
               </p>
               <LucideShieldCheck className="!w-5 !h-5 stroke-[#242424]" />
               <p className="leading-tight">
-                <span className="font-bold">Niski rizik: </span>
-                minimalna cena tokena je zagarantovana od strane dm2 platforme
+                <span className="font-bold">Bez rizika: </span>
+                minimalna cena tokena je zagarantovana od strane dm<sup>2</sup> platforme
               </p>
               <LucideHandCoins className="!w-5 !h-5 stroke-[#242424]" />
               <p className="leading-tight">

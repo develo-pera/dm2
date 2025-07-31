@@ -71,7 +71,7 @@ const Projects = () => {
           <p>Prijavi se na našu newsletter listu i saznaj cim projekat bude dostupan za ulaganje, ili se prijavi na listu cekanja za token i prihoduj u svakom slucaju.</p>
           <div className="flex flex-wrap gap-3 mt-5">
             <NewsletterDialog>
-              <button className="bg-zinc-100 text-black px-8 py-3 font-bold rounded-xs">Prijavi se na newsletter</button>
+              <div className="bg-zinc-100 text-black px-8 py-3 font-bold rounded-xs">Prijavi se na newsletter</div>
             </NewsletterDialog>
             <WaitlistDialog>
               <div className="bg-[#242424] text-white px-8 py-3 font-bold rounded-xs">Prijavi se na listu cekanja za token</div>
