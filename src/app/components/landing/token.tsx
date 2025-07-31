@@ -23,13 +23,13 @@ const Token = () => {
               i ostvarujete jednokratni profit kada se on završi i proda.
             </p>
             <p className="mb-3">
-              Investiranjem u dm2 tokene stičete pravo na deo profita iz
-              svih budućih projekata koji se realizuju putem dm2 platforme
+              Investiranjem u dm<sup>2</sup> tokene stičete pravo na deo profita iz
+              svih budućih projekata koji se realizuju putem dm<sup>2</sup> platforme
               — dugoročno i pasivno, sve dok držite tokene
             </p>
             <p className="mb-3">
               Digitalni tokeni nisu novost na našem tržištu — uspešne primere
-              već imamo kroz projekte poput Finspota, Treesury-a (Walnut Fund)
+              već imamo kroz projekte poput <a href="https://finspot.com/" target="_blank" className="text-[#ffbf00] underline">Finspota</a>, <a href="https://treesury.com/" target="_blank" className="text-[#ffc500] underline">Treesury-a</a> (Walnut Fund)
               i drugih.
             </p>
             <p className="mt-7 mb-5 font-bold">Zašto ulagati u dm2 tokene?</p>
