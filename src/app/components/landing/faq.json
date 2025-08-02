@@ -2,39 +2,43 @@
   "faq": [
     {
       "question": "Šta tačno podrazumeva termin decimetar kvadratni?",
-      "answer": "Decimetar kvadratni predstavlja desetio deo kvadratnog metra, a u našem slučaju predstavlja najmanju obračunsku jedinicu u koju se može investirati. To je jedinica za koju vezujemo sve troškove i nakon prodaje sav profit."
+      "answer": "Decimetar kvadratni, u našem slučaju predstavlja najmanju obračunsku jedinicu u koju se može investirati. To je jedinica za koju vezujemo sve troškove, a nakon prodaje sav profit."
     },
     {
       "question": "Da li je moguće investirati u više decimetara kvadratnih?",
-      "answer": "Da, moguće je investirati u više decimetara kvadratnih, pa čak i više metara kvadratnih. To ne znači da stičete vlasništvo nad kupljenim kvadratima, vec ostvarujete pravo na profit od prodaje površine u koju ste investirali. Vlasništvo nad samim kvadratima, tj. nekretninama stiču krajnji kupci."
+      "answer": "Da, moguće je investirati u više decimetara kvadratnih, pa čak i više metara kvadratnih.<br/> To ne znači da stičete vlasništvo nad kupljenim kvadratima, vec ostvarujete pravo na profit od prodaje površine u koju ste investirali. Vlasništvo nad samim kvadratima, tj. nekretninama stiču krajnji kupci."
     },
     {
-      "question": "Ko moze da investira?",
-      "answer": "Sva ko, svaaaaakooooo, svako."
+      "question": "Ko može da investira?",
+      "answer": "Naša trenutna ponuda se promoviše u Srbiji, ali rado prihvatamo investitore iz svih delova sveta. Ipak, trebalo bi da se uverite da vaša zemlja prebivališta ne nameće bilo kakve pravne prepreke."
     },
     {
-      "question": "Da li investitor moze da bude i pravno lice?",
-      "answer": "Sva ko, svaaaaakooooo, svako."
+      "question": "Da li investitor može da bude strani državljanin?",
+      "answer": "I strani državljani mogu da investiraju, u tom slučaju je uplata je u devizama."
+    },
+    {
+      "question": "Da li investitor može da bude i pravno lice?",
+      "answer": "Da, moguće je da investitor bude pravno lice. Razlika je samo u tome kako se plaća porez."
     },
     {
       "question": "Koja je razlika izmedju decimetara kvadratnih i dm2 tokena?",
-      "answer": "Deeeee."
+      "answer": "Decimetar kvadratni predstgavlja delic buduce nekretnine u koji se moze investirati pre samog pocetka izgradnje i kasnije prodati. U pitanju je jednokratna investicija u konkretan projakt i samim tim jednokratan profit nakon prodaje. <br/>Dm2 tokeni predsrtavljaju drugaciju vrstu investicije, gde se investicija vrsi u osnovni kapital dm2 kompanije, a za uzvrat investitori dobijaju deo profita od svakog realizovanog projekta u buducnosti. Investiciju u tokene se ne razlikuje puno od deonica, a deo profita od svakog projekta od dividendi."
     },
     {
       "question": "Zbog cega nekretnine?",
-      "answer": "Da bi ti pito"
+      "answer": "Tržište nekretnina predstavlja jedan od najvažnijih stubova globalne ekonomije — sa ukupnom vrednošću koja premašuje 300 triliona dolara. Nekretnine su vekovima smatrane sigurnom i stabilnom imovinom i investicijom niskog rizika."
     },
     {
       "question": "Kako se biraju i planiraju projekti?",
-      "answer": "Da bi ti pito"
+      "answer": "Nas tim eksperata konstanto prati kretanja trenutno aktuelnih trzista, kao i trzista u nastajanju, identifikuje atraktivne lokacije i prilike visokog potencijala i izradjuje finansijske analize u najkracem roku."
     },
     {
       "question": "Da li cete u ponudi imati samo gradjevinske projekte u Srbiji ili ce biti i u drugim zemljama?",
-      "answer": "Da bi ti pito"
+      "answer": "Za pocetak u planu imamo nekoliko projekata iskljucivo u Srbiji, ali su planovi za buducnost da se projekti razvijaju i u drugim zemljama. Zahvaljujuci dugogodisnjem iskustvu u poslovanju u razlicitim oblastima, nasa mreza partnera obuhvata sve krajeve sveta. Izmedju ostalog, Dubai, zemlje istocne Afrike, kao i zemlje Latisnke Amerike, tri trzista koja su u poslednjem vremenu pokazala visok potencijal."
     },
     {
       "question": "Kolika je minimalna investicija u dm2 tokene?",
-      "answer": "Minimalna investicija u tokene je 150 eur tokom incijalne ponude, nakon cega se tokeni mogu kupiti na slobodnom trzistu i po trzisnoj ceni u kolicini koja iznosi manje od 150 eur."
+      "answer": "Minimalna investicija u tokene tokom Incijalne Ponude Tokena je 150 eur. Nakon zavrsetka Inicijalne Ponude Tokena dm<sup>2</sup> tokene mozete kupiti jedino na slobodnom trzistu, od lica koje su tokene stekli tokom Incijalne Ponude ili posle  i po trzisnoj ceni i tada je ce biti moguce kupiti toklne u kolicini koja iznosi manje od 150 eur."
     },
     {
       "question": "Kolika je minimalna investicija u decimetre kvadratne?",
@@ -50,7 +54,7 @@
     },
     {
       "question": "Kako mogu da pratim svoje investicije?",
-      "answer": "Da bi ti pito"
+      "answer": "Svoje investicije, bilo u tokene ili u decimetre kvadratne, mozete pratiti na našoj platformi, gde mozete videti sve detalje o svim projektima i svojim investicijama. Na platformi su vam dostupni detalji koliko ste ulozili, koliki profit mozete d aocekujete ili ste ostvarili, kao i referal bonuse."
     },
     {
       "question": "Na kojin nacin funkcionise referal program?",
@@ -78,6 +82,10 @@
     },
     {
       "question": "Zasto se i kako dm2 koristi blokcejn?",
+      "answer": "Da bi ti pito"
+    },
+    {
+      "question": "Da li fluktuacije na tristu kriptovaluta uticnu na cenu dm2 tokena?",
       "answer": "Da bi ti pito"
     },
     {
