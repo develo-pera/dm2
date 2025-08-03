@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="max-w-md">
           <div>
             <p className="text-xl font-bold mb-4">Prjavite se na našu mejling listu</p>
-            <p className="text-sm mb-4">Prjavite se i pratite najnovije informacije o dm<sup>2</sup> projektima.</p>
+            <p className="text-sm mb-4">Prijavite se i pratite najnovije informacije o dm<sup>2</sup> projektima.</p>
             <input type="email" placeholder="Email" className="w-full p-2 rounded-xs border border-zinc-300" />
             <button className="bg-[#242424] text-white px-4 py-2 rounded-xs w-full mt-2">Prjavite se</button>
             <p className="text-sm mt-2">Nećemo Vas spamovati, obećavamo!</p>

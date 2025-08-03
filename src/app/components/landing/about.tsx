@@ -17,7 +17,11 @@ const About = () => {
           </p>
           <p className="mb-3">
             Koncept frakcionisanog ulaganja u nekretnine već je dobro poznat u razvijenim
-            zemljama poput Ujedinjenih Arapskih Emirata, SAD-a, i Velike Britanije gde ga
+            zemljama poput <a href="https://mint.prypco.com/" target="_blank" rel="noopener noreferrer" className="text-[#ffbf00] underline">Ujedinjenih Arapskih Emirata</a>,
+            {" "}
+            <a href="https://www.parcl.co/" target="_blank" rel="noopener noreferrer" className="text-[#ffbf00] underline">SAD-a</a>, i
+            {" "}
+            <a href="https://cointelegraph.com/news/gates-oasys-tokenize-tokyo-real-estate-global-expansion" target="_blank" className="text-[#ffbf00] underline">Japana</a> gde ga
             koriste hiljade malih investitora koji žele da ulože pametno, bez prevelikog
             rizika. Sada je ovaj model dostupan i kod nas, kroz dm<sup>2</sup> platformu.
           </p>

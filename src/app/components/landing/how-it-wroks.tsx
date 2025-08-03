@@ -14,6 +14,10 @@ const HowItWorks = () => {
       </p>
 
       <div>
+        <p className="text-2xl mt-15 font-bold">Mi se brinemo za sve</p>
+      </div>
+
+      <div>
         <p className="text-2xl mt-15 font-bold">Kako izgleda ceo proces:</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mt-7">
           <div className="bg-zinc-100 p-7 md:p-10 rounded-xs md:border-t-3 md:border-[#242424] lg:border-t-3 lg:border-[#FEE600]">
