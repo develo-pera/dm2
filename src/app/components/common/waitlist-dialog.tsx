@@ -1,4 +1,5 @@
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -18,6 +19,17 @@ const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
           <input className="border border-zinc-200 rounded-xs p-2 w-full mb-3" type="text" placeholder="Email" />
           <p>Telefon</p>
           <input className="border border-zinc-200 rounded-xs p-2 w-full mb-3" type="text" placeholder="Telefon" />
+          <p>Vrsta investicije za koju ste zainteresovani</p>
+          <Select>
+            <SelectTrigger className="border border-zinc-200 rounded-xs p-2 !w-full mb-4 text-md">
+              <SelectValue placeholder="Izaberite vrstu investicije" />
+            </SelectTrigger>
+            <SelectContent className="rounded-xs">
+              <SelectItem value="tokene">dm2 tokeni</SelectItem>
+              <SelectItem value="decimetre">decimetri kvadratne</SelectItem>
+              <SelectItem value="oba">I tokeni, i decimetri kvadratni</SelectItem>
+            </SelectContent>
+          </Select>
           <p>Koliko biste bili spremni da ulozite u evrima?</p>
           <input className="border border-zinc-200 rounded-xs p-2 w-full" type="text" placeholder="Iznos investicije u evrima" />
 

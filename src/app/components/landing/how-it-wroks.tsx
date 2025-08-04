@@ -15,6 +15,24 @@ const HowItWorks = () => {
 
       <div>
         <p className="text-2xl mt-15 font-bold">Mi se brinemo za sve</p>
+        <div>
+          <p>Pronalazenje lokacija</p>
+        </div>
+        <div>
+          <p>Izrada projekta</p>
+        </div>
+        <div>
+          <p>Pribavljanje dozvola</p>
+        </div>
+        <div>
+          <p>Tokenizacija i finansiranje</p>
+        </div>
+        <div>
+          <p>Prodaja krajnjim kupcima</p>
+        </div>
+        <div>
+          <p>Deljenje profita</p>
+        </div>
       </div>
 
       <div>
