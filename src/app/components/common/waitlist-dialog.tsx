@@ -26,7 +26,7 @@ const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
             </SelectTrigger>
             <SelectContent className="rounded-xs">
               <SelectItem value="tokene">dm2 tokeni</SelectItem>
-              <SelectItem value="decimetre">decimetri kvadratne</SelectItem>
+              <SelectItem value="decimetre">decimetri kvadratni</SelectItem>
               <SelectItem value="oba">I tokeni, i decimetri kvadratni</SelectItem>
             </SelectContent>
           </Select>

@@ -15,24 +15,33 @@ const HowItWorks = () => {
 
       <div>
         <p className="text-2xl mt-15 font-bold">Mi se brinemo za sve</p>
-        <div>
-          <p>Pronalazenje lokacija</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-7 mt-7">
+          <div className="bg-zinc-100 p-7 md:p-10 rounded-xs">
+            <p className="text-xl font-bold mb-3">Pronalaženje tržišnih prilika</p>
+            <p>Naš tim eksperata pronalazi atraktivne lokacije za gradnju i prilike visokog potencijala.</p>
+          </div>
+          <div className="bg-zinc-100 p-7 md:p-10 rounded-xs">
+            <p className="text-xl font-bold mb-3">Izradu projekta</p>
+            <p>Pravimo pravno-imovinske, urbanističke, finansijske analize i izrađujemo projekat od početka do kraja.</p>
+          </div>
+          <div className="bg-zinc-100 p-7 md:p-10 rounded-xs">
+            <p className="text-xl font-bold mb-3">Kupovinu zemljišta i pribavljanje dozvola</p>
+            <p>Pregovaramo i kupujemo parcele na kojima planiramo da gradimo i pribavljamo sve potrebne dozvole za gradnju.</p>
+          </div>
+          <div className="bg-zinc-100 p-7 md:p-10 rounded-xs">
+            <p className="text-xl font-bold mb-3">Tokenizaciju i finansiranje</p>
+            <p>Tokenizujemo projekat i dajemo priliku našim investitorima da ulože kupovinom decimetara kvadratnih.</p>
+          </div>
+          <div className="bg-zinc-100 p-7 md:p-10 rounded-xs">
+            <p className="text-xl font-bold mb-3">Prodaju krajnjim kupcima</p>
+            <p>Staramo se o prodaji nepokretnosti krajnjim kupcima po tržišnim cenama osiguravajući najveći mogući profit.</p>
+          </div>
+          <div className="bg-zinc-100 p-7 md:p-10 rounded-xs">
+            <p className="text-xl font-bold mb-3">Deljenje profita</p>
+            <p>Isplaćujemo profit investitorima i vlasnicima dm<sup>2</sup> tokena na transparentan način u realnom vremenu.</p>
+          </div>
         </div>
-        <div>
-          <p>Izrada projekta</p>
-        </div>
-        <div>
-          <p>Pribavljanje dozvola</p>
-        </div>
-        <div>
-          <p>Tokenizacija i finansiranje</p>
-        </div>
-        <div>
-          <p>Prodaja krajnjim kupcima</p>
-        </div>
-        <div>
-          <p>Deljenje profita</p>
-        </div>
+
       </div>
 
       <div>
