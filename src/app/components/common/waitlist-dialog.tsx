@@ -7,9 +7,9 @@ const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
       <DialogTrigger>{children}</DialogTrigger>
       <DialogContent className="rounded-xs">
         <DialogHeader>
-          <DialogTitle className="text-xl font-bold mt-5">Prijavite se na listu cekanja za kupovinu dm<sup>2</sup> tokena</DialogTitle>
+          <DialogTitle className="text-xl font-bold mt-5">Prijavite se na listu čekanja</DialogTitle>
           <DialogDescription className="mb-5">
-            Prijavite se na listu cekanja da biste dobili prvu poruku o otvaranju prodaje kako ne biste propustili priliku da kupite tokene po prodajnoj ceni.
+            Prijavite se na listu čekanja da biste dobili prvu poruku o otvaranju prodaje kako ne biste propustili priliku da kupite tokene po prodajnoj ceni.
           </DialogDescription>
         </DialogHeader>
         <div>
@@ -25,7 +25,7 @@ const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
               <SelectValue placeholder="Izaberite vrstu investicije" />
             </SelectTrigger>
             <SelectContent className="rounded-xs">
-              <SelectItem value="tokene">dm2 tokeni</SelectItem>
+              <SelectItem value="tokene">DM2 tokeni</SelectItem>
               <SelectItem value="decimetre">decimetri kvadratni</SelectItem>
               <SelectItem value="oba">I tokeni, i decimetri kvadratni</SelectItem>
             </SelectContent>

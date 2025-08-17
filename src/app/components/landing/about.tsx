@@ -28,7 +28,7 @@ const About = () => {
           <p className="mb-3">
             Ulaganje se dešava u najranijoj, projektnoj fazi, kada su cene najniže.
             Nakon izgradnje, nekretnine se prodaju krajnjim kupcima, a profit se deli
-            između investitora u projekte, vlasnika dm<sup>2</sup> tokena i samog tima
+            između investitora u projekte, vlasnika DM2 tokena i samog tima
             koji vodi realizaciju.
           </p>
           <p className="text-2xl mt-15 mb-5 font-bold">U dm<sup>2</sup> je moguće investirati na dva načina</p>
@@ -50,9 +50,9 @@ const About = () => {
           </p>
         </div>
         <div className="bg-[#242424] text-white p-5 md:p-10 rounded-xs flex flex-col gap-5">
-          <p className="font-bold text-lg uppercase mb-3">Investicija u dm<sup>2</sup> digitalne tokene</p>
+          <p className="font-bold text-lg uppercase mb-3">Investicija u DM2 digitalne tokene</p>
           <p>
-            Investicija u dm<sup>2</sup> digitalne tokene omogućava investitorima da ulože
+            Investicija u DM2 digitalne tokene omogućava investitorima da ulože
             svoj novac jednom i dobijaju deo profita od svih realizovanih projekata dokle
             god drže tokene u sopstvenom vlasništvu.
           </p>

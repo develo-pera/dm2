@@ -48,7 +48,7 @@ const TokenCalculator = () => {
       </div>
       <div className="bg-[#242424] text-white p-5 rounded-xs">
         <p className="text-xl font-bold">Rezultat kalkulacije</p>
-        <p className="mb-5 text-sm">Investitori u dm2 tokene ostvaruju 20% od profita nakon prodaje svih realizovanih projekata dokle god imaju tokene u svom vlasništvu.</p>
+        <p className="mb-5 text-sm">Investitori u DM2 tokene ostvaruju 20% od profita nakon prodaje svih realizovanih projekata dokle god imaju tokene u svom vlasništvu.</p>
         <p>Vaš ulog</p>
         <p className="text-2xl font-bold mb-2">{initialInvestment} eur</p>
         <p className="mb-2">Broj realizovanih projekata</p>
