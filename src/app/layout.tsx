@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   },
 };
 
-const isComingSoon = true;
+const isComingSoon = false;
 
 export default function RootLayout({
   children,
