@@ -11,7 +11,7 @@ const Socials = () => {
         <Image src="/ln-icon.svg" alt="linkedin" width={20} height={20} />
       </Link>
       {/* TODO: Add instagram link */}
-      <Link href="/" target="_blank" rel="noopener noreferrer  ">
+      <Link href="https://instagram.com/decimetarkvadratni/" target="_blank" rel="noopener noreferrer  ">
         <Image src="/insta-icon.svg" alt="instagram" width={20} height={20} />
       </Link>
       {/* <Link href="/">
@@ -21,9 +21,9 @@ const Socials = () => {
         <Image src="/twitter-icon.svg" alt="x" width={20} height={20} />
       </Link>
       {/* TODO: Add instagram link */}
-      <Link href="/" target="_blank" rel="noopener noreferrer">
+      {/* <Link href="/" target="_blank" rel="noopener noreferrer">
         <Image src="/yt-icon.svg" alt="youtube" width={20} height={20} />
-      </Link>
+      </Link> */}
     </div>
   );
 };
