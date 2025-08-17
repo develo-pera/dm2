@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
+import { Geist_Mono, Space_Grotesk } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navigation from "./components/common/navigation";
+import Footer from "./components/common/footer";
+import ComingSoon from "./components/common/coming-soon";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -66,18 +69,31 @@ export const metadata: Metadata = {
   },
 };
 
+const isComingSoon = true;
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   console.log(incise.variable);
+
   return (
     <html lang="en">
       <body
         className={`${spaceGrotesk.variable} ${geistMono.variable} ${incise.variable} antialiased`}
       >
-        {children}
+        {
+          !isComingSoon ? (
+            <>
+              <Navigation />
+              {children}
+              <Footer />
+            </>
+          ) : (
+            <ComingSoon />
+          )
+        }
       </body>
     </html>
   );

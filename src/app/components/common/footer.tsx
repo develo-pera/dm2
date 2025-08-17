@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { } from "lucide-react";
+import Socials from "./socials";
 
 const Footer = () => {
   return (
@@ -13,11 +15,12 @@ const Footer = () => {
           <div className="mb-10">
             <h3 id="kontakt" className="text-xl font-bold mb-5">Kontakt</h3>
             <p className="mb-1">
-              <span className="font-bold">Email:</span> <a href="mailto:contact@decimetarkvadratni.com">contact@decimetarkvadratni.com</a>
+              <span className="font-bold">Email:</span> <a href="mailto:info@decimetarkvadratni.com">info@decimetarkvadratni.com</a>
             </p>
             <p>
               <span className="font-bold">Telefon:</span> <a href="tel:+381641234567">+381 64 123 4567</a>
             </p>
+            <Socials />
           </div>
         </div>
         <div className="max-w-md">
@@ -33,7 +36,7 @@ const Footer = () => {
       <div className="bg-[#242424] text-white text-sm">
         <div className="max-w-7xl mx-auto p-5 flex flex-col sm:flex-row justify-between items-center gap-3">
           <div className="flex gap-4">
-            <Link href="/">Politika privatnosti</Link>
+            <Link href="/politika-privatnosti">Politika privatnosti</Link>
             <Link href="/">Odricanje od odgovornosti</Link>
           </div>
           <p>Sva prava zadržana © {new Date().getFullYear()} dm2</p>
