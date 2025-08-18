@@ -7,6 +7,7 @@ import Footer from "./components/common/footer";
 import ComingSoon from "./components/common/coming-soon";
 // import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -106,6 +107,7 @@ export default function RootLayout({
             <ComingSoon />
           )
         }
+        <Toaster />
       </body>
       {/* <GoogleTagManager gtmId="G-627RF9LN8S" /> */}
     </html>

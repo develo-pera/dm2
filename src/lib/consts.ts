@@ -1,0 +1,1 @@
+export const MOBILE_NUMBER = "+381 64 1234567";

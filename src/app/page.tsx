@@ -13,7 +13,6 @@ import Calculator from "./components/landing/calculator";
 export default function Home() {
   return (
     <div>
-
       <Hero />
       <About />
       <HowItWorks />

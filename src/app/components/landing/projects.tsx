@@ -32,13 +32,13 @@ const Projects = () => {
     <div id="projekti">
       <div className="max-w-7xl mx-auto p-5 py-20">
         <h2 className="text-4xl font-bold mb-7">Planirani projekti</h2>
-        <p>U toku je izrada i pripremna projektnog resenja prvog pilot projekta. Javno finansiranje kroz decimetre kvadratne i realizacija projekta planirani su nakon uspesnog zavrsetka incijalne ponude tokena.</p>
+        <p>U toku je izrada i pripremna projektnog rešenja prvog pilot projekta. Javno finansiranje kroz decimetre kvadratne i realizacija projekta planirani su nakon uspešnog završetka incijalne ponude tokena.</p>
         <div className="mt-10">
           <div className="grid grid-cols-1 md:grid-cols-2 bg-[#fee600] rounded-xs overflow-hidden">
             <div>
               <div className="bg-[#242424] text-white px-5 py-10">
                 <h3 className="text-2xl font-bold mb-5">Neu Pasua Palacios</h3>
-                <p>Pilot projekat je prvi projekat koji će biti realizovan kroz dm<sup>2</sup> platformu. Projekat će biti realizovan kroz javno finansiranje kroz decimetre kvadratne i realizacija projekta planirani su nakon uspesnog zavrsetka incijalne ponude tokena.</p>
+                <p>Pilot projekat je prvi projekat koji će biti realizovan kroz dm<sup>2</sup> platformu. Projekat će biti realizovan kroz javno finansiranje kroz decimetre kvadratne i realizacija projekta planirani su nakon uspešnog završetka incijalne ponude tokena.</p>
               </div>
 
               <div className="grid grid-cols-2 gap-3 px-5 py-10 text-sm">
@@ -68,13 +68,13 @@ const Projects = () => {
           </div>
         </div>
         <div className="mt-10">
-          <p>Prijavi se na našu newsletter listu i saznaj cim projekat bude dostupan za ulaganje, ili se prijavi na listu cekanja za token i prihoduj u svakom slucaju.</p>
+          <p>Prijavite se na našu newsletter listu i saznajte prvi kada budući projekati budu dostupani za ulaganje, ili se prijavite na listu čekanja za tokene i prihodujte u svakom slučaju.</p>
           <div className="flex flex-wrap gap-3 mt-5">
             <NewsletterDialog>
-              <div className="bg-zinc-100 text-black px-8 py-3 font-bold rounded-xs">Prijavi se na newsletter</div>
+              <div className="bg-zinc-100 text-black px-8 py-3 font-bold rounded-xs">Prijavite se na newsletter</div>
             </NewsletterDialog>
             <WaitlistDialog>
-              <div className="bg-[#242424] text-white px-8 py-3 font-bold rounded-xs">Prijavi se na listu cekanja za token</div>
+              <div className="bg-[#242424] text-white px-8 py-3 font-bold rounded-xs">Prijavite se na listu čekanja za token</div>
             </WaitlistDialog>
           </div>
         </div>
