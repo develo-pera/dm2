@@ -5,6 +5,7 @@ import "./globals.css";
 import Navigation from "./components/common/navigation";
 import Footer from "./components/common/footer";
 import ComingSoon from "./components/common/coming-soon";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -95,6 +96,7 @@ export default function RootLayout({
           )
         }
       </body>
+      <GoogleTagManager gtmId="G-627RF9LN8S" />
     </html>
   );
 }
