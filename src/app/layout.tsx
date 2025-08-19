@@ -5,7 +5,8 @@ import "./globals.css";
 import Navigation from "./components/common/navigation";
 import Footer from "./components/common/footer";
 import ComingSoon from "./components/common/coming-soon";
-import { GoogleTagManager } from "@next/third-parties/google";
+// import { GoogleTagManager } from "@next/third-parties/google";
+import Script from "next/script";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -81,6 +82,16 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-627RF9LN8S" strategy="afterInteractive" />
+      <Script id="google-tag-manager" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-627RF9LN8S');
+        `}
+      </Script>
       <body
         className={`${spaceGrotesk.variable} ${geistMono.variable} ${incise.variable} antialiased`}
       >
@@ -96,7 +107,7 @@ export default function RootLayout({
           )
         }
       </body>
-      <GoogleTagManager gtmId="G-627RF9LN8S" />
+      {/* <GoogleTagManager gtmId="G-627RF9LN8S" /> */}
     </html>
   );
 }
