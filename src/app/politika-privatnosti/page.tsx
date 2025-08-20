@@ -14,11 +14,11 @@ const PolitikaPrivatnosti = () => {
       <p className="mb-7">Kontrolor podataka je lice/pravno lice koje određuje svrhe i sredstva obrade ličnih podataka.</p>
 
       <p className="mb-7">Kontrolor:</p>
-      <p className="mb-7">dm² (Decimetar Kvadratni)</p>
-      <p className="mb-7">Pravno lice: [TBD – npr. “DM2 d.o.o. Beograd”]</p>
-      <p className="mb-7">Adresa sedišta: [TBD – ulica, grad, poštanski broj, država]</p>
-      <p className="mb-7">Matični broj: [TBD]</p>
-      <p className="mb-7">Telefon: [TBD]</p>
+      <p className="mb-3">dm² (Decimetar Kvadratni)</p>
+      <p className="mb-3">Pravno lice: [TBD – npr. “DM2 d.o.o. Beograd”]</p>
+      <p className="mb-3">Adresa sedišta: [TBD – ulica, grad, poštanski broj, država]</p>
+      <p className="mb-3">Matični broj: [TBD]</p>
+      <p className="mb-3">Telefon: [TBD]</p>
       <p className="mb-7">E-mail: info@decimetarkvadratni.com</p>
 
       <p className="mb-7">(U daljem tekstu: “dm²” ili “Kontrolor”.)</p>
@@ -50,8 +50,6 @@ const PolitikaPrivatnosti = () => {
       <p className="mb-7">Svrha: poštovanje zakonskih obaveza.</p>
       <p className="mb-7">Pravni osnov: ispunjenje zakonskih obaveza.</p>
 
-      (Ako trenutno nije potrebno, ovu sekciju možemo ukloniti.)
-
       <h2 className="text-2xl font-bold mb-7">Podaci prilikom kupovine / naručivanja</h2>
 
       <p className="mb-7">Kada vršite kupovinu ili narudžbinu, prikupljamo:</p>
@@ -75,7 +73,7 @@ const PolitikaPrivatnosti = () => {
 
       <p className="mb-7">Ako se prijavite, možemo Vam slati novosti, biltene i ponude.</p>
 
-      <p className="mb-7">Podaci: ime, e-mail, (opciono) telefon, informacije o interesovanjima.</p>
+      <p className="mb-7">Podaci: ime, e-mail, telefon (opciono), informacije o interesovanjima.</p>
       <p className="mb-7">Pravni osnov: Vaša saglasnost (može se povući u svakom trenutku putem “unsubscribe” opcije ili slanjem e-maila na info@decimetarkvadratni.com).</p>
 
       <h2 className="text-2xl font-bold mb-7">Odgovaranje na upite</h2>
@@ -91,7 +89,7 @@ const PolitikaPrivatnosti = () => {
 
       <h2 className="text-2xl font-bold mb-7">Međunarodni prenos podataka</h2>
 
-      <p className="mb-7">Naša primarna infrastruktura se nalazi u [TBD – EU/EEA ili Srbija].</p>
+      <p className="mb-7">Naša primarna infrastruktura se nalazi u SAD i EU.</p>
       <p className="mb-7">Neki provajderi mogu obrađivati podatke iz drugih zemalja (npr. EU, SAD), uz primenu odgovarajućih zaštitnih mera (Standardne ugovorne klauzule ili ekvivalent).</p>
 
       <p className="mb-7">Ako se koriste blockchain transakcije, određeni podaci mogu biti trajno upisani u decentralizovane mreže dostupne globalno.</p>
@@ -150,7 +148,7 @@ const PolitikaPrivatnosti = () => {
 
       <p className="mb-7">Za sva pitanja u vezi sa ovom Politikom privatnosti ili obradom Vaših podataka, kontaktirajte nas:</p>
 
-      <p className="mb-7">E-mail: info@decimetarkvadratni.com</p>
+      <p className="mb-3">E-mail: info@decimetarkvadratni.com</p>
       <p className="mb-7">Sajt: https://decimetarkvadratni.com</p>
     </div>
   );
