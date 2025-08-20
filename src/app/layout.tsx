@@ -79,7 +79,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  console.log(incise.variable);
 
   return (
     <html lang="en">

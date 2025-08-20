@@ -99,7 +99,7 @@ const HowItWorks = () => {
                 100€ ide investitorima u dm<sup>2</sup> tokene
               </p>
               <p>
-                100€ ide timu koji vodi projekat (nosiocu projekta)
+                100€ ide timu koji vodi projekat (nosilac projekta)
               </p>
             </div>
             <p className="mb-3">
@@ -126,7 +126,7 @@ const HowItWorks = () => {
               <p className="bg-zinc-100 p-3 border-b border-zinc-200 flex items-center justify-end">300€</p>
               <p className="bg-zinc-100 p-3 border-b border-zinc-200">Investitori u dm<sup>2</sup> token</p>
               <p className="bg-zinc-100 p-3 text-right border-b border-zinc-200 flex items-center justify-end">100€</p>
-              <p className="bg-zinc-100 p-3">Nosioc projekta (dm<sup>2</sup>)</p>
+              <p className="bg-zinc-100 p-3">Nosilac projekta (dm<sup>2</sup>)</p>
               <p className="bg-zinc-100 p-3 text-right flex items-center justify-end">100€</p>
             </div>
           </div>

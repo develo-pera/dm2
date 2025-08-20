@@ -12,7 +12,7 @@ const Calculator = () => {
             <TabsTrigger className="py-3 px-5 rounded-xs [&[data-state=active]]:bg-[#242424] [&[data-state=active]]:text-white" value="dm2">Decimetar kvadratni</TabsTrigger>
             <TabsTrigger className="py-3 px-5 rounded-xs [&[data-state=active]]:bg-[#242424] [&[data-state=active]]:text-white" value="dm2-token">DM2 token</TabsTrigger>
           </TabsList>
-          <p className="text-sm text-zinc-500">Kliknite da odaberete kalkulator</p>
+          <p className="text-sm text-zinc-500">Kliknite da odaberete kalkulator.</p>
           <TabsContent value="dm2" className="mt-10">
             <Dm2Calculator />
           </TabsContent>
