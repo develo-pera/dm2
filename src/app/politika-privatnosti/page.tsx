@@ -3,13 +3,13 @@ const PolitikaPrivatnosti = () => {
     <div className="max-w-7xl mx-auto p-5 py-20">
       <h1 className="text-4xl font-bold mb-7">Politika privatnosti</h1>
 
-      <p className="mb-7">Datum stupanja na snagu: [TBD]</p>
+      <p className="mb-7">Datum stupanja na snagu: 01.08.2025.</p>
 
       <p className="mb-7">Na sajtu dm² (Decimetar Kvadratni) (“dm²”, “mi”, “nas” ili “naše”), dostupnom na adresi https://decimetarkvadratni.com, Vaša privatnost nam je veoma važna. Ova Politika privatnosti objašnjava kada, zašto i kako prikupljamo, koristimo, čuvamo i štitimo Vaše lične podatke kada koristite naš veb-sajt i usluge povezane sa našim modelom investiranja u nekretnine kroz manje jedinice (“decimetri kvadratni”).</p>
 
       <p className="mb-7">Korišćenjem naših usluga prihvatate prakse opisane u ovoj Politici privatnosti.</p>
 
-      <h2 className="text-2xl font-bold mb-7">Kontrolor podataka</h2>
+      {/* <h2 className="text-2xl font-bold mb-7">Kontrolor podataka</h2>
 
       <p className="mb-7">Kontrolor podataka je lice/pravno lice koje određuje svrhe i sredstva obrade ličnih podataka.</p>
 
@@ -21,7 +21,7 @@ const PolitikaPrivatnosti = () => {
       <p className="mb-3">Telefon: [TBD]</p>
       <p className="mb-7">E-mail: info@decimetarkvadratni.com</p>
 
-      <p className="mb-7">(U daljem tekstu: “dm²” ili “Kontrolor”.)</p>
+      <p className="mb-7">(U daljem tekstu: “dm²” ili “Kontrolor”.)</p> */}
 
       <h2 className="text-2xl font-bold mb-7">Kada, zašto i kako prikupljamo podatke</h2>
 
@@ -39,7 +39,7 @@ const PolitikaPrivatnosti = () => {
 
       <p className="mb-7">Svrha: kreiranje naloga, autentifikacija i omogućavanje pristupa uslugama.</p>
       <p className="mb-7">Pravni osnov: preduzimanje radnji na Vaš zahtev pre zaključenja ugovora i/ili izvršenje ugovora, kao i naš legitimni interes da obezbedimo bezbedan pristup.</p>
-
+      {/* 
       <h2 className="text-2xl font-bold mb-7">KYC/KYB i obaveze u vezi sa sprečavanjem pranja novca (ako je primenljivo)</h2>
 
       <p className="mb-7">Ukoliko to bude zakonski obavezno, dm² može sprovesti verifikaciju identiteta (KYC/KYB) i provere u vezi sa sprečavanjem pranja novca i finansiranja terorizma.</p>
@@ -48,7 +48,7 @@ const PolitikaPrivatnosti = () => {
 
       <p className="mb-7">Obrađivač: [TBD – npr. Sumsub/Onfido ili drugi provajder]</p>
       <p className="mb-7">Svrha: poštovanje zakonskih obaveza.</p>
-      <p className="mb-7">Pravni osnov: ispunjenje zakonskih obaveza.</p>
+      <p className="mb-7">Pravni osnov: ispunjenje zakonskih obaveza.</p> */}
 
       <h2 className="text-2xl font-bold mb-7">Podaci prilikom kupovine / naručivanja</h2>
 
@@ -60,14 +60,14 @@ const PolitikaPrivatnosti = () => {
 
       <p className="mb-7">Svrha: obrada porudžbine, naplata, fakturisanje, korisnička podrška.</p>
       <p className="mb-7">Pravni osnov: izvršenje ugovora i poštovanje zakonskih/finansijskih propisa.</p>
-      <p className="mb-7">Procesor plaćanja: [TBD – npr. Stripe, PayPal, banka].</p>
+      {/* <p className="mb-7">Procesor plaćanja: [TBD – npr. Stripe, PayPal, banka].</p> */}
 
-      <h2 className="text-2xl font-bold mb-7">Ne-personalni podaci i kolačići</h2>
+      {/* <h2 className="text-2xl font-bold mb-7">Ne-personalni podaci i kolačići</h2>
 
       <p className="mb-7">Automatski prikupljamo tehničke podatke (tip uređaja i pregledača, operativni sistem, stranice koje posećujete, vreme zadržavanja) i koristimo kolačiće radi boljeg funkcionisanja sajta i analitike.</p>
 
       <p className="mb-7">Svrha: funkcionisanje sajta, analiza i unapređenje usluge.</p>
-      <p className="mb-7">Pravni osnov: naš legitimni interes; za neesencijalne kolačiće – Vaša saglasnost.</p>
+      <p className="mb-7">Pravni osnov: naš legitimni interes; za neesencijalne kolačiće – Vaša saglasnost.</p> */}
 
       <h2 className="text-2xl font-bold mb-7">Marketing (na osnovu saglasnosti)</h2>
 

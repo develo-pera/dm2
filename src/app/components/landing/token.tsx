@@ -31,7 +31,14 @@ const Token = () => {
             </p>
             <p className="mb-3">
               Digitalni tokeni nisu novost na našem tržištu — uspešne primere
-              već imamo kroz projekte poput <a href="https://finspot.com/" target="_blank" className="text-[#ffbf00] underline">Finspota</a>, <a href="https://treesury.com/" target="_blank" className="text-[#ffc500] underline">Treesury-a</a> (Walnut Fund)
+              već imamo kroz projekte poput
+              {' '}
+              <a href="https://finspot.com/" target="_blank" className="underline">Finspota</a>,
+              {' '}
+              <a href="https://treesury.com/" target="_blank" className="underline">Treesury-a</a>,
+              {' '}
+              <a href="https://thewalnutfund.com/invest-in-walnut-tokens-sustainable-agriculture-blockchain/" target="_blank" className="underline">Walnut Funda</a>
+              {' '}
               i drugih.
             </p>
             <p className="mt-7 mb-5 font-bold">Zašto ulagati u dm2 tokene?</p>
@@ -62,7 +69,7 @@ const Token = () => {
         </div>
         <p className="mb-5 font-bold">Prijavi se na listu čekanja i među prvima kupi DM2 tokene po najpovoljnijim uslovima.</p>
         <div className="flex flex-wrap gap-2">
-          <button className="bg-zinc-100 px-8 py-3 rounded-xs font-bold">Pročitaj Beli papir</button>
+          {/* <button className="bg-zinc-100 px-8 py-3 rounded-xs font-bold">Pročitaj Beli papir</button> */}
           <WaitlistDialog>
             <div className="bg-[#242424] text-white px-8 py-3 rounded-xs font-bold">Prijavi se na listu čekanja</div>
           </WaitlistDialog>

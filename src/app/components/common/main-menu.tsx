@@ -10,7 +10,7 @@ const MainMenu = () => {
         <Link href="/#kalkulator">Kalkulator</Link>
         <Link href="/#planirani-projekti">Planirani projekti</Link>
         <Link href="/#cesto-postavljana-pitanja">Često postavljana pitanja</Link>
-        <Link href="/#o-nama">O nama</Link>
+        {/* <Link href="/#o-nama">O nama</Link> */}
         <Link href="/#kontakt">Kontakt</Link>
       </nav>
     </div>

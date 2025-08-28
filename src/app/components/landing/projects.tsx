@@ -6,8 +6,10 @@ import NewsletterDialog from "../common/newsletter-dialog";
 import ProjectCard from "../common/project-card";
 
 const images = [
-  "/pp-1.webp",
-  "/pp-2.webp",
+  "/pierre1.png",
+  "/pierre2.png",
+  "/pierre3.png",
+  "/pierre4.png",
 ]
 
 const Projects = () => {

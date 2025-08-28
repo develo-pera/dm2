@@ -4,26 +4,26 @@ import { useState } from "react";
 
 const Dm2Calculator = () => {
   const [constructionPrice, setConstructionPrice] = useState<number | undefined>(1000);
-  const [numberOfDm2, setNumberOfDm2] = useState<number | undefined>(1);
+  const [numberOfDm2, setNumberOfDm2] = useState<number | undefined>(10);
   const [salePrice, setSalePrice] = useState<number | undefined>(1500);
 
   const calculateInvestment = () => {
     if (numberOfDm2 && constructionPrice) {
-      return numberOfDm2 * (constructionPrice / 10);
+      return numberOfDm2 * (constructionPrice / 100);
     }
     return 0;
   };
 
   const calculateProfit = () => {
     if (numberOfDm2 && salePrice && constructionPrice) {
-      return numberOfDm2 * (salePrice - constructionPrice) / 10 * 60 / 100;
+      return numberOfDm2 * (salePrice - constructionPrice) / 100 * 60 / 100;
     }
     return 0;
   };
 
   const calculateTotalProfit = () => {
     if (numberOfDm2 && salePrice && constructionPrice) {
-      return calculateProfit() + (numberOfDm2 * (constructionPrice / 10));
+      return calculateProfit() + (numberOfDm2 * (constructionPrice / 100));
     }
     return 0;
   };
@@ -37,8 +37,13 @@ const Dm2Calculator = () => {
         </div>
         <div className="mb-5">
           <p>Broj dm<sup>2</sup> u koje želite da uložite</p>
-          <p className="mb-2 text-sm">Na osnovu cene m<sup>2</sup> u izgradnji koju ste uneli, cena 1 decimetra kvadratnog iznosi {constructionPrice ? constructionPrice / 10 : 0} €.</p>
-          <input className="w-full max-w-[300px] border border-zinc-200 rounded-xs p-2" type="number" min={1} placeholder="Broj dm2" value={numberOfDm2} onChange={(e) => setNumberOfDm2(Number(e.target.value))} />
+          <div>
+            <p className="text-sm">Minimalna investicija je 10 dm<sup>2</sup>.</p>
+            <p className="mb-2 text-sm">Na osnovu cene m<sup>2</sup> u izgradnji koju ste uneli, cena 1 decimetra kvadratnog iznosi {constructionPrice ? constructionPrice / 100 : 0} €. </p>
+          </div>
+          <input className="w-full max-w-[300px] border border-zinc-200 rounded-xs p-2" type="number" placeholder="Broj dm2" value={numberOfDm2} onChange={(e) => {
+            setNumberOfDm2(Number(e.target.value));
+          }} />
         </div>
         <div>
           <p className="mb-2">Prodajna cena m<sup>2</sup></p>
@@ -55,7 +60,7 @@ const Dm2Calculator = () => {
         <p>Ukupno dobijate</p>
         <p className="text-4xl text-[#fee600] font-bold">{calculateTotalProfit()} €</p>
       </div>
-    </div>
+    </div >
   );
 };
 

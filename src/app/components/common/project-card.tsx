@@ -24,18 +24,20 @@ const ProjectCard = ({ images }: { images: string[] }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 bg-[#fee600] rounded-xs overflow-hidden">
         <div>
           <div className="bg-[#242424] text-white px-5 py-10">
-            <h3 className="text-2xl font-bold mb-5">Neu Pasua Palacios – Pilot projekat</h3>
-            <p>Prvi projekat koji će biti realizovan putem DM2 platforme.
+            <h3 className="text-2xl font-bold mb-5">Pierre 1er de Serbie Residence – Pilot projekat</h3>
+            <p>
+              Život dostojan kralja! <br /><br />
+              Prvi projekat koji će biti realizovan putem DM2 platforme. Nalaziće se u glavnoj ulici, Kralja Petra I u Novoj Pazovi.
               Investitorima će biti omogućen ulazak kroz javno finansiranje decimetara kvadratnih, odmah nakon završetka inicijalne ponude tokena.</p>
           </div>
 
           <div className="grid grid-cols-2 gap-3 px-5 py-10 text-sm">
             <p><span className="font-bold">Lokacija</span><br />Nova Pazova</p>
-            <p><span className="font-bold">Tip</span><br />Stambeno-poslovni kompleks</p>
-            <p><span className="font-bold">Površina</span><br />30.000 m<sup>2</sup></p>
-            <p><span className="font-bold">Broj decimetara kvadratnih</span><br />300.000 dm<sup>2</sup></p>
+            <p><span className="font-bold">Tip</span><br />Stambeno-poslovna jedinica</p>
+            <p><span className="font-bold">Površina</span><br />2.000 m<sup>2</sup></p>
+            <p><span className="font-bold">Broj decimetara kvadratnih</span><br />200.000 dm<sup>2</sup></p>
             <p><span className="font-bold">Cena m<sup>2</sup> u izgradnji</span><br />1300€</p>
-            <p><span className="font-bold">Prodajna cena m<sup>2</sup></span><br />1800€</p>
+            <p><span className="font-bold">Prodajna cena m<sup>2</sup></span><br />1900€</p>
           </div>
         </div>
         <div className="flex flex-col">
@@ -44,8 +46,8 @@ const ProjectCard = ({ images }: { images: string[] }) => {
               className="w-full h-full bg-cover bg-center"
               style={{ backgroundImage: `url('${images[currentImage]}')` }}
             />
-            <div className="absolute top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center">
-              <p className="text-white text-2xl font-bold">Neu Pasua Palacios</p>
+            <div className="absolute top-0 left-0 w-full h-full bg-black/40 flex items-center justify-center">
+              <p className="text-white text-2xl font-bold">Pierre 1er de Serbie Residence</p>
             </div>
           </div>
           <div className="grid grid-cols-2">

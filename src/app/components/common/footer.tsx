@@ -72,7 +72,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto p-5 flex flex-col sm:flex-row justify-between items-center gap-3">
           <div className="flex gap-4">
             <Link href="/politika-privatnosti">Politika privatnosti</Link>
-            <Link href="/">Odricanje od odgovornosti</Link>
+            {/* <Link href="/">Odricanje od odgovornosti</Link> */}
           </div>
           <p>Sva prava zadržana © {new Date().getFullYear()} dm2</p>
         </div>

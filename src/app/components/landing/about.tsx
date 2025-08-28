@@ -17,11 +17,11 @@ const About = () => {
           </p>
           <p className="mb-3">
             Koncept frakcionisanog ulaganja u nekretnine već je dobro poznat u razvijenim
-            zemljama poput <a href="https://mint.prypco.com/" target="_blank" rel="noopener noreferrer" className="text-[#ffbf00] underline">Ujedinjenih Arapskih Emirata</a>,
+            zemljama poput <a href="https://mint.prypco.com/" target="_blank" rel="noopener noreferrer" className="underline">Ujedinjenih Arapskih Emirata</a>,
             {" "}
-            <a href="https://www.parcl.co/" target="_blank" rel="noopener noreferrer" className="text-[#ffbf00] underline">SAD-a</a>, i
+            <a href="https://www.parcl.co/" target="_blank" rel="noopener noreferrer" className="underline">SAD-a</a>, i
             {" "}
-            <a href="https://cointelegraph.com/news/gates-oasys-tokenize-tokyo-real-estate-global-expansion" target="_blank" className="text-[#ffbf00] underline">Japana</a> gde ga
+            <a href="https://cointelegraph.com/news/gates-oasys-tokenize-tokyo-real-estate-global-expansion" target="_blank" className="underline">Japana</a> gde ga
             koriste hiljade malih investitora koji žele da ulože pametno, bez prevelikog
             rizika. Sada je ovaj model dostupan i kod nas, kroz dm<sup>2</sup> platformu.
           </p>
@@ -45,7 +45,7 @@ const About = () => {
             u najranijoj fazi.
           </p>
           <p>Veličina investicije kreće od cene jedne desetine kvadrata u izgradnji,
-            tj. decimetra kvadratnog, a moguće je investirati u više decimetara ili
+            tj. 10 decimetara kvadratnih, a moguće je investirati u više decimetara ili
             metara kvadratnih, pa do jedne ili više celokupnih jedinica.
           </p>
         </div>
