@@ -2,6 +2,7 @@ import Image from "next/image";
 import WaitlistDialog from "../common/waitlist-dialog";
 import { LucideChartSpline, LucideHandCoins, LucidePiggyBank, LucideShieldCheck } from "lucide-react";
 
+const prePreWhitePaper = `Digitalni tokeni su u potpunosti regulisani Zakonom o digitalnoj imovini, a mi smo trenutno u procesu predaje Belog papira Komisiji za hartije od vrednosti Republike Srbije na evaluaciju i odobrenje. Ovo odobrenje garantuje usklađenost, transparentnost i zaštitu investitora.`
 const preWhitePaper = `Digitalni tokeni su u potpunosti regulisani Zakonom o digitalnoj imovini, a naš Beli papir je zvanično predat Komisiji za hartije od vrednosti Republike Srbije na evaluaciju i odobrenje. Ovo odobrenje garantuje usklađenost, transparentnost i zaštitu investitora.`
 const afterWhitePaper = `dm<sup>2</sup> tokeni su u potpunosti regulisani Zakonom o digitalnoj imovini, a naš Beli papir je zvanično odobrila Komisija za hartije od vrednosti Republike Srbije (licenca broj: 3/3-333-1933/33-24). Ovo odobrenje garantuje usklađenost, transparentnost i zaštitu investitora.`
 
@@ -11,7 +12,7 @@ const Token = () => {
       <h2 className="text-4xl font-bold mb-7">Šta je DM2 token i čemu služi</h2>
       <div>
         <div className="bg-[#fee600] p-5 rounded-xs">
-          <p className="font-bold" dangerouslySetInnerHTML={{ __html: preWhitePaper || afterWhitePaper }} />
+          <p className="font-bold" dangerouslySetInnerHTML={{ __html: prePreWhitePaper || preWhitePaper || afterWhitePaper }} />
         </div>
         <div className="my-10 grid lg:grid-cols-2 gap-5">
           <div>
