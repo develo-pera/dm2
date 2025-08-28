@@ -27,7 +27,7 @@ const ProjectCard = ({ images }: { images: string[] }) => {
             <h3 className="text-2xl font-bold mb-5">Pierre 1er de Serbie Residence – Pilot projekat</h3>
             <p>
               Život dostojan kralja! <br /><br />
-              Prvi projekat koji će biti realizovan putem DM2 platforme. Nalaziće se u glavnoj ulici, Kralja Petra I u Novoj Pazovi.
+              Prvi projekat koji će biti realizovan putem dm<sup>2</sup> platforme. Nalaziće se u glavnoj ulici, Kralja Petra I u Novoj Pazovi.
               Investitorima će biti omogućen ulazak kroz javno finansiranje decimetara kvadratnih, odmah nakon završetka inicijalne ponude tokena.</p>
           </div>
 
