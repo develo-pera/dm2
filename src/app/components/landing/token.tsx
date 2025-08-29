@@ -66,7 +66,7 @@ const Token = () => {
               </p>
             </div>
           </div>
-          <Image src="/dm2-platforma2-min.png" alt="dm2 platforma" width={980} height={500} className="lg:inline-block rounded-xs" />
+          <Image src="/platforma.png" alt="dm2 platforma" width={980} height={500} className="lg:inline-block rounded-xs" />
         </div>
         <p className="mb-5 font-bold">Prijavi se na listu čekanja i među prvima kupi DM2 tokene po najpovoljnijim uslovima.</p>
         <div className="flex flex-wrap gap-2">

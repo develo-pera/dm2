@@ -24,10 +24,10 @@ const ProjectCard = ({ images }: { images: string[] }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 bg-[#fee600] rounded-xs overflow-hidden">
         <div>
           <div className="bg-[#242424] text-white px-5 py-10">
-            <h3 className="text-2xl font-bold mb-5">Pierre 1er de Serbie Residence – Pilot projekat</h3>
+            <h3 className="text-2xl font-bold mb-5">King&apos;s Court Nova Pazova – Pilot projekat</h3>
             <p>
               Život dostojan kralja! <br /><br />
-              Prvi projekat koji će biti realizovan putem dm<sup>2</sup> platforme. Nalaziće se u glavnoj ulici, Kralja Petra I u Novoj Pazovi.
+              Prvi projekat koji će biti realizovan putem dm<sup>2</sup> platforme. Planirana zgrada se nalazi u Novoj Pazovi, u glavnoj ulici, na samo 30 minuta od centra Beograda.
               Investitorima će biti omogućen ulazak kroz javno finansiranje decimetara kvadratnih, odmah nakon završetka inicijalne ponude tokena.</p>
           </div>
 
@@ -47,7 +47,7 @@ const ProjectCard = ({ images }: { images: string[] }) => {
               style={{ backgroundImage: `url('${images[currentImage]}')` }}
             />
             <div className="absolute top-0 left-0 w-full h-full bg-black/40 flex items-center justify-center">
-              <p className="text-white text-2xl font-bold">Pierre 1er de Serbie Residence</p>
+              <p className="text-white text-2xl font-bold">King&apos;s Court Nova Pazova</p>
             </div>
           </div>
           <div className="grid grid-cols-2">

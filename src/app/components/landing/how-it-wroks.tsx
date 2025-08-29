@@ -85,30 +85,30 @@ const HowItWorks = () => {
             </p>
             <p className="mb-3">
               Zamislite stambenu zgradu ukupne površine 10.000 m². Cena kvadrata u
-              izgradnji iznosi 1.000€, a prodajna cena je 1.500€ po kvadratu.
+              izgradnji iznosi 1.500€, a prodajna cena je 2.500€ po kvadratu.
             </p>
             <p className="mb-3">
-              To znači da se po svakom kvadratu ostvaruje profit od 500€,
+              To znači da se po svakom kvadratu ostvaruje profit od 1000€,
               koji se deli na sledeći način:
             </p>
             <div className="mb-3 font-bold">
               <p>
-                300€ ide investitorima u projekat (30% povrat na investiciju)
+                600€ ide investitorima u projekat (40% profita)
               </p>
               <p>
-                100€ ide investitorima u dm<sup>2</sup> tokene
+                200€ ide investitorima u dm<sup>2</sup> tokene
               </p>
               <p>
-                100€ ide timu koji vodi projekat (nosilac projekta)
+                200€ ide timu koji vodi projekat (nosilac projekta)
               </p>
             </div>
             <p className="mb-3">
-              Investitorima u projekat se tako vraća njihov ulog od 1.000€ +
-              dodatnih 300€ zarade, što znači da ukupno dobijaju 1.300€ po kvadratu.
+              Investitorima u projekat se tako vraća njihov ulog od 1.500€ +
+              dodatnih 600€ zarade, što znači da ukupno dobijaju 2.100€ po kvadratu.
             </p>
             <p>
-              Samo na ovom jednom projektu, investitori ostvaruju 30% povraćaj,
-              dok investitori u tokene dobijaju ⅔ svog inicijalnog ulaganja,
+              Samo na ovom jednom projektu, investitori ostvaruju 40% profita,
+              dok investitori u tokene dobijaju 150% svog inicijalnog ulaganja,
               već nakon prve realizacije.
             </p>
           </div>
@@ -116,18 +116,18 @@ const HowItWorks = () => {
             <div className="grid grid-cols-2">
               <p className="col-span-2 font-bold bg-[#242424] text-white p-3">Ključ u ruke kvadrat</p>
               <p className="bg-zinc-100 p-3 border-b border-zinc-200">Cena izgradnje</p>
-              <p className="bg-zinc-100 p-3 text-right border-b border-zinc-200 flex items-center justify-end">1000€</p>
-              <p className="bg-zinc-100 p-3 border-b border-zinc-200 ">Prodajna cena</p>
               <p className="bg-zinc-100 p-3 text-right border-b border-zinc-200 flex items-center justify-end">1500€</p>
+              <p className="bg-zinc-100 p-3 border-b border-zinc-200 ">Prodajna cena</p>
+              <p className="bg-zinc-100 p-3 text-right border-b border-zinc-200 flex items-center justify-end">2500€</p>
               <p className="bg-zinc-100 p-3 ">Profit nakon prodaje</p>
-              <p className="bg-zinc-100 p-3 text-right flex items-center justify-end">500€</p>
+              <p className="bg-zinc-100 p-3 text-right flex items-center justify-end">1000€</p>
               <p className="col-span-2 font-bold bg-[#242424] text-white p-3 mt-7">Profit po kvadratu se zatim deli</p>
-              <p className="bg-zinc-100 p-3 border-b border-zinc-200">Investitori u projekat (30% povrat)</p>
-              <p className="bg-zinc-100 p-3 border-b border-zinc-200 flex items-center justify-end">300€</p>
+              <p className="bg-zinc-100 p-3 border-b border-zinc-200">Investitori u projekat (40% profita)</p>
+              <p className="bg-zinc-100 p-3 border-b border-zinc-200 flex items-center justify-end">600€</p>
               <p className="bg-zinc-100 p-3 border-b border-zinc-200">Investitori u dm<sup>2</sup> token</p>
-              <p className="bg-zinc-100 p-3 text-right border-b border-zinc-200 flex items-center justify-end">100€</p>
-              <p className="bg-zinc-100 p-3">Nosilac projekta (dm<sup>2</sup>)</p>
-              <p className="bg-zinc-100 p-3 text-right flex items-center justify-end">100€</p>
+              <p className="bg-zinc-100 p-3 text-right border-b border-zinc-200 flex items-center justify-end">200€</p>
+              <p className="bg-zinc-100 p-3">Nosilac projekta (dm<sup>2</sup> platforma)</p>
+              <p className="bg-zinc-100 p-3 text-right flex items-center justify-end">200€</p>
             </div>
           </div>
         </div>
