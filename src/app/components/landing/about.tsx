@@ -17,18 +17,18 @@ const About = () => {
           </p>
           <p className="mb-3">
             Koncept frakcionisanog ulaganja u nekretnine već je dobro poznat u razvijenim
-            zemljama poput <a href="https://mint.prypco.com/" target="_blank" rel="noopener noreferrer" className="text-[#ffbf00] underline">Ujedinjenih Arapskih Emirata</a>,
+            zemljama poput <a href="https://mint.prypco.com/" target="_blank" rel="noopener noreferrer" className="underline">Ujedinjenih Arapskih Emirata</a>,
             {" "}
-            <a href="https://www.parcl.co/" target="_blank" rel="noopener noreferrer" className="text-[#ffbf00] underline">SAD-a</a>, i
+            <a href="https://www.parcl.co/" target="_blank" rel="noopener noreferrer" className="underline">SAD-a</a>, i
             {" "}
-            <a href="https://cointelegraph.com/news/gates-oasys-tokenize-tokyo-real-estate-global-expansion" target="_blank" className="text-[#ffbf00] underline">Japana</a> gde ga
+            <a href="https://cointelegraph.com/news/gates-oasys-tokenize-tokyo-real-estate-global-expansion" target="_blank" className="underline">Japana</a> gde ga
             koriste hiljade malih investitora koji žele da ulože pametno, bez prevelikog
             rizika. Sada je ovaj model dostupan i kod nas, kroz dm<sup>2</sup> platformu.
           </p>
           <p className="mb-3">
             Ulaganje se dešava u najranijoj, projektnoj fazi, kada su cene najniže.
             Nakon izgradnje, nekretnine se prodaju krajnjim kupcima, a profit se deli
-            između investitora u projekte, vlasnika dm<sup>2</sup> tokena i samog tima
+            između investitora u projekte, vlasnika DM2 tokena i samog tima
             koji vodi realizaciju.
           </p>
           <p className="text-2xl mt-15 mb-5 font-bold">U dm<sup>2</sup> je moguće investirati na dva načina</p>
@@ -45,14 +45,14 @@ const About = () => {
             u najranijoj fazi.
           </p>
           <p>Veličina investicije kreće od cene jedne desetine kvadrata u izgradnji,
-            tj. decimetra kvadratnog, a moguće je investirati u više decimetara ili
+            tj. 10 decimetara kvadratnih, a moguće je investirati u više decimetara ili
             metara kvadratnih, pa do jedne ili više celokupnih jedinica.
           </p>
         </div>
         <div className="bg-[#242424] text-white p-5 md:p-10 rounded-xs flex flex-col gap-5">
-          <p className="font-bold text-lg uppercase mb-3">Investicija u dm<sup>2</sup> digitalne tokene</p>
+          <p className="font-bold text-lg uppercase mb-3">Investicija u DM2 digitalne tokene</p>
           <p>
-            Investicija u dm<sup>2</sup> digitalne tokene omogućava investitorima da ulože
+            Investicija u DM2 digitalne tokene omogućava investitorima da ulože
             svoj novac jednom i dobijaju deo profita od svih realizovanih projekata dokle
             god drže tokene u sopstvenom vlasništvu.
           </p>

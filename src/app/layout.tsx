@@ -7,6 +7,7 @@ import Footer from "./components/common/footer";
 import ComingSoon from "./components/common/coming-soon";
 // import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -71,14 +72,13 @@ export const metadata: Metadata = {
   },
 };
 
-const isComingSoon = true;
+const isComingSoon = false;
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  console.log(incise.variable);
 
   return (
     <html lang="en">
@@ -106,6 +106,7 @@ export default function RootLayout({
             <ComingSoon />
           )
         }
+        <Toaster />
       </body>
       {/* <GoogleTagManager gtmId="G-627RF9LN8S" /> */}
     </html>

@@ -10,7 +10,6 @@ const Socials = () => {
       <Link href="https://www.linkedin.com/company/decimetar-kvadratni" target="_blank" rel="noopener noreferrer">
         <Image src="/ln-icon.svg" alt="linkedin" width={20} height={20} />
       </Link>
-      {/* TODO: Add instagram link */}
       <Link href="https://instagram.com/decimetarkvadratni/" target="_blank" rel="noopener noreferrer  ">
         <Image src="/insta-icon.svg" alt="instagram" width={20} height={20} />
       </Link>
