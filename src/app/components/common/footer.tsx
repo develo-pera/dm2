@@ -53,7 +53,7 @@ const Footer = () => {
               <span className="font-bold">Email:</span> <a href="mailto:info@decimetarkvadratni.com">info@decimetarkvadratni.com</a>
             </p>
             <p>
-              <span className="font-bold">Telefon:</span> <a href="tel:+381641234567">{MOBILE_NUMBER}</a>
+              <span className="font-bold">Telefon:</span> <a href={`tel:${MOBILE_NUMBER.replace(/\s+/g, '')}`}>{MOBILE_NUMBER}</a>
             </p>
             <Socials />
           </div>

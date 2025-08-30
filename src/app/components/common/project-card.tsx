@@ -24,20 +24,26 @@ const ProjectCard = ({ images }: { images: string[] }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 bg-[#fee600] rounded-xs overflow-hidden">
         <div>
           <div className="bg-[#242424] text-white px-5 py-10">
-            <h3 className="text-2xl font-bold mb-5">King&apos;s Court Nova Pazova – Pilot projekat</h3>
-            <p>
+            {/* <h3 className="text-2xl font-bold mb-5">King&apos;s Court Nova Pazova – Pilot projekat</h3> */}
+            <h3 className="text-2xl font-bold mb-5">King&apos;s Court Stari Grad – Pilot projekat</h3>
+            {/* <p>
               Život dostojan kralja! <br /><br />
               Prvi projekat koji će biti realizovan putem dm<sup>2</sup> platforme. Planirana zgrada se nalazi u Novoj Pazovi, u glavnoj ulici, na samo 30 minuta od centra Beograda.
+              Investitorima će biti omogućen ulazak kroz javno finansiranje decimetara kvadratnih, odmah nakon završetka inicijalne ponude tokena.</p> */}
+            <p>
+              Život dostojan kralja! <br /><br />
+              Prvi projekat koji će biti realizovan putem dm<sup>2</sup> platforme. Planirana zgrada se nalazi u samom centru Beograd, u opštini Stari Grad.
               Investitorima će biti omogućen ulazak kroz javno finansiranje decimetara kvadratnih, odmah nakon završetka inicijalne ponude tokena.</p>
           </div>
 
           <div className="grid grid-cols-2 gap-3 px-5 py-10 text-sm">
-            <p><span className="font-bold">Lokacija</span><br />Nova Pazova</p>
+            {/* <p><span className="font-bold">Lokacija</span><br />Nova Pazova</p> */}
+            <p><span className="font-bold">Lokacija</span><br />Stari Grad</p>
             <p><span className="font-bold">Tip</span><br />Stambeno-poslovna jedinica</p>
             <p><span className="font-bold">Površina</span><br />2.000 m<sup>2</sup></p>
             <p><span className="font-bold">Broj decimetara kvadratnih</span><br />200.000 dm<sup>2</sup></p>
-            <p><span className="font-bold">Cena m<sup>2</sup> u izgradnji</span><br />1300€</p>
-            <p><span className="font-bold">Prodajna cena m<sup>2</sup></span><br />1900€</p>
+            <p><span className="font-bold">Cena m<sup>2</sup> u izgradnji</span><br />1800€</p>
+            <p><span className="font-bold">Prodajna cena m<sup>2</sup></span><br />3500€</p>
           </div>
         </div>
         <div className="flex flex-col">
@@ -47,7 +53,9 @@ const ProjectCard = ({ images }: { images: string[] }) => {
               style={{ backgroundImage: `url('${images[currentImage]}')` }}
             />
             <div className="absolute top-0 left-0 w-full h-full bg-black/40 flex items-center justify-center">
-              <p className="text-white text-2xl font-bold">King&apos;s Court Nova Pazova</p>
+              {/* <p className="text-white text-2xl font-bold">King&apos;s Court Nova Pazova</p> */}
+              <p className="text-white text-2xl font-bold">King&apos;s Court Stari Grad</p>
+
             </div>
           </div>
           <div className="grid grid-cols-2">
