@@ -1,10 +1,11 @@
 "use client";
 
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter, DialogTrigger } from "@/components/ui/dialog";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { toast } from "sonner";
 
 const NewsletterDialog = ({ children }: { children: React.ReactNode }) => {
+  const [sending, setSending] = useState(false);
   const emailRef = useRef<HTMLInputElement>(null);
 
   const handleSubscribe = async () => {
@@ -18,6 +19,7 @@ const NewsletterDialog = ({ children }: { children: React.ReactNode }) => {
       return;
     }
 
+    setSending(true);
     try {
       const response = await fetch("/api/mailchimp", {
         method: "POST",
@@ -33,6 +35,7 @@ const NewsletterDialog = ({ children }: { children: React.ReactNode }) => {
     } catch (error) {
       toast.error("Došlo je do greške prilikom pretplate na našu mejling listu, pokušajte ponovo kasnije.");
     }
+    setSending(false);
   };
 
   return (
@@ -55,7 +58,7 @@ const NewsletterDialog = ({ children }: { children: React.ReactNode }) => {
         </div>
 
         <DialogFooter>
-          <button onClick={handleSubscribe} className="bg-[#242424] text-white px-8 py-3 rounded-xs font-bold cursor-pointer">Prijavite se</button>
+          <button onClick={handleSubscribe} className="bg-[#242424] text-white px-8 py-3 rounded-xs font-bold cursor-pointer">{sending ? "Slanje u toku..." : "Prijavite se"}</button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

@@ -4,13 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import Socials from "./socials";
 import { MOBILE_NUMBER } from "@/lib/consts";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { toast } from "sonner";
 
 const Footer = () => {
+  const [sending, setSending] = useState(false);
   const emailRef = useRef<HTMLInputElement>(null);
 
   const handleSubscribe = async () => {
+
     if (!emailRef.current?.value) {
       toast.error("Email je obavezan");
       return;
@@ -21,13 +23,13 @@ const Footer = () => {
       return;
     }
 
+    setSending(true);
     try {
       const response = await fetch("/api/mailchimp", {
         method: "POST",
         body: JSON.stringify({ email: emailRef.current.value }),
       });
       const data = await response.json();
-
       if (data.success) {
         toast.success("Uspešno ste se pretplatili na našu mejling listu");
         emailRef.current.value = "";
@@ -37,6 +39,7 @@ const Footer = () => {
     } catch (error) {
       toast.error("Došlo je do greške prilikom pretplate na našu mejling listu, pokušajte ponovo kasnije.");
     }
+    setSending(false);
   };
 
   return (
@@ -63,7 +66,7 @@ const Footer = () => {
             <p className="text-xl font-bold mb-4">Prjavite se na našu mejling listu</p>
             <p className="text-sm mb-4">Prijavite se i pratite najnovije informacije o dm<sup>2</sup> projektima.</p>
             <input ref={emailRef} type="email" placeholder="Email" className="w-full p-2 rounded-xs border border-zinc-300" />
-            <button onClick={handleSubscribe} className="bg-[#242424] text-white px-4 py-2 rounded-xs w-full mt-2">Prijavite se</button>
+            <button onClick={handleSubscribe} className="bg-[#242424] text-white px-4 py-2 rounded-xs w-full mt-2">{sending ? "Slanje u toku..." : "Prijavite se"}</button>
             <p className="text-sm mt-2">Nećemo Vas spamovati, obećavamo!</p>
           </div>
         </div>

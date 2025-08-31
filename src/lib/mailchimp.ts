@@ -41,7 +41,6 @@ export const subscribeToMailchimp = async (email: string, interestedIn?: Interes
         "PHONE": phone,
       },
     });
-    console.log("response", response);
     return response;
   } catch (error) {
     console.log("error", error);
