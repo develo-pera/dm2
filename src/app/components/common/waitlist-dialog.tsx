@@ -6,6 +6,7 @@ import { useRef, useState } from "react";
 import { toast } from "sonner";
 
 const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
+  const [sending, setSending] = useState(false);
   const nameRef = useRef<HTMLInputElement>(null);
   const surnameRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
@@ -58,7 +59,7 @@ const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
       return;
     }
 
-
+    setSending(true);
     try {
       const response = await fetch("/api/mailchimp", {
         method: "POST",
@@ -76,12 +77,14 @@ const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
         investmentAmountRef.current.value = "";
       } else {
         toast.error("Došlo je do greške prilikom prijave na listu čekanja, pokušajte ponovo kasnije.");
+        setSending(false);
         return;
       }
 
     } catch (error) {
       toast.error("Došlo je do greške prilikom prijave na listu čekanja, pokušajte ponovo kasnije.");
     }
+    setSending(false);
   };
 
   return (
@@ -117,7 +120,7 @@ const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
           <p>Koliko biste bili spremni da ulozite u evrima?</p>
           <input ref={investmentAmountRef} className="border border-zinc-200 rounded-xs p-2 w-full" type="text" placeholder="Iznos investicije u evrima" />
 
-          <button onClick={handleSubscribe} className="bg-[#FEE600] font-bold px-8 py-3 rounded-xs w-full mt-10">Prijavi se</button>
+          <button onClick={handleSubscribe} className="bg-[#FEE600] font-bold px-8 py-3 rounded-xs w-full mt-10">{sending ? "Slanje u toku..." : "Prijavite se"}</button>
         </div>
       </DialogContent>
     </Dialog>
