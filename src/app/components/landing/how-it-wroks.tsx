@@ -104,13 +104,13 @@ const HowItWorks = () => {
             </div>
             <p className="mb-3">
               Investitorima u projekat se tako vraća njihov ulog od 1.500€ +
-              dodatnih 600€ zarade, što znači da ukupno dobijaju 2.100€ po kvadratu.
+              dodatnih 600€ zarade, što znači da ukupno dobijaju 2.100€ po kvadratu, tj. ostvaraju profit od 40% u odnosu na njihov ulog.
             </p>
-            <p>
+            {/* <p>
               Samo na ovom jednom projektu, investitori ostvaruju 40% profita,
               dok investitori u tokene dobijaju 150% svog inicijalnog ulaganja,
               već nakon prve realizacije.
-            </p>
+            </p> */}
           </div>
           <div>
             <div className="grid grid-cols-2">
@@ -122,7 +122,7 @@ const HowItWorks = () => {
               <p className="bg-zinc-100 p-3 ">Profit nakon prodaje</p>
               <p className="bg-zinc-100 p-3 text-right flex items-center justify-end">1000€</p>
               <p className="col-span-2 font-bold bg-[#242424] text-white p-3 mt-7">Profit po kvadratu se zatim deli</p>
-              <p className="bg-zinc-100 p-3 border-b border-zinc-200">Investitori u projekat (40% profita)</p>
+              <p className="bg-zinc-100 p-3 border-b border-zinc-200">Investitori u projekat (40% profit)</p>
               <p className="bg-zinc-100 p-3 border-b border-zinc-200 flex items-center justify-end">600€</p>
               <p className="bg-zinc-100 p-3 border-b border-zinc-200">Investitori u dm<sup>2</sup> token</p>
               <p className="bg-zinc-100 p-3 text-right border-b border-zinc-200 flex items-center justify-end">200€</p>
