@@ -90,7 +90,7 @@ const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
   return (
     <Dialog>
       <DialogTrigger>{children}</DialogTrigger>
-      <DialogContent className="rounded-xs">
+      <DialogContent className="DialogContent rounded-xs">
         <DialogHeader>
           <DialogTitle className="text-xl font-bold mt-5">Prijavite se na listu čekanja</DialogTitle>
           <DialogDescription className="mb-5">
