@@ -68,12 +68,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ulaganje u nekretnine već od 150€ - Decimetar kvadratni",
     description: "Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
-    images: [{
-      url: "/dm2-og-image.jpg",
-      width: 1920,
-      height: 1080,
-      alt: "Decimetar kvadratni"
-    }]
+    // images: [{
+    //   url: "/dm2-og-image.jpg",
+    //   width: 1920,
+    //   height: 1080,
+    //   alt: "Decimetar kvadratni"
+    // }]
   },
 };
 
