@@ -5,7 +5,7 @@ const HowItWorks = () => {
       <p>
         Koncept dm<sup>2</sup> je jednostavan: umesto jednog velikog investitora
         koji finansira ceo projekat, kod nas više manjih investitora
-        zajedno ulaže u izgradnju.
+        zajedno ulaže u izgradnju nekretnina.
       </p>
       <p>
         Oni zajednički preuzimaju finansiranje u fazi projektovanja i
@@ -18,7 +18,7 @@ const HowItWorks = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 mt-7">
           <div className="bg-[#242424] text-white p-7 md:p-10 rounded-xs">
             <p className="text-xl font-bold mb-3">Pronalaženje tržišnih prilika</p>
-            <p>Naš tim eksperata pronalazi atraktivne lokacije za gradnju i prilike visokog potencijala.</p>
+            <p>Naš tim eksperata pronalazi atraktivne lokacije za izgradnju različitih tipova nekretnina i prilike visokog potencijala.</p>
           </div>
           <div className="bg-[#242424] text-white p-7 md:p-10 rounded-xs">
             <p className="text-xl font-bold mb-3">Izradu projekta</p>
@@ -26,11 +26,11 @@ const HowItWorks = () => {
           </div>
           <div className="bg-[#242424] text-white p-7 md:p-10 rounded-xs">
             <p className="text-xl font-bold mb-3">Kupovinu zemljišta i pribavljanje dozvola</p>
-            <p>Pregovaramo i kupujemo parcele na kojima planiramo da gradimo i pribavljamo sve potrebne dozvole za gradnju.</p>
+            <p>Pregovaramo i kupujemo parcele na kojima planiramo da gradimo nekretnine i pribavljamo sve potrebne dozvole za gradnju.</p>
           </div>
           <div className="bg-[#242424] text-white p-7 md:p-10 rounded-xs">
             <p className="text-xl font-bold mb-3">Tokenizaciju i finansiranje</p>
-            <p>Tokenizujemo projekat i dajemo priliku našim investitorima da ulože kupovinom decimetara kvadratnih.</p>
+            <p>Tokenizujemo projekat i dajemo priliku našim investitorima da ulože u konkretnu nekretninu kupovinom decimetara kvadratnih.</p>
           </div>
           <div className="bg-[#242424] text-white p-7 md:p-10 rounded-xs">
             <p className="text-xl font-bold mb-3">Prodaju krajnjim kupcima</p>
@@ -38,7 +38,7 @@ const HowItWorks = () => {
           </div>
           <div className="bg-[#242424] text-white p-7 md:p-10 rounded-xs">
             <p className="text-xl font-bold mb-3">Deljenje profita</p>
-            <p>Isplaćujemo profit investitorima i vlasnicima DM2 tokena na transparentan način u realnom vremenu.</p>
+            <p>Isplaćujemo profit od prodaje nekretnina investitorima i vlasnicima DM2 tokena na transparentan način u realnom vremenu.</p>
           </div>
         </div>
 
@@ -66,7 +66,7 @@ const HowItWorks = () => {
           <div className="bg-zinc-200 md:bg-zinc-100 lg:bg-zinc-200 p-7 md:p-10 rounded-xs lg:border-t-3 lg:border-[#242424]">
             <p className="font-bold">4. korak</p>
             <p className="text-xl font-bold mb-3 md:mb-7">Prodaja</p>
-            <p className="text-sm">Već tokom izgradnje započinje prodaja nepokretnosti krajnjim kupcima po tržišnim cenama.</p>
+            <p className="text-sm">Već tokom izgradnje započinje prodaja nekretnina krajnjim kupcima po tržišnim cenama.</p>
           </div>
           <div className="bg-zinc-100 p-7 md:p-10 rounded-xs lg:border-t-3 lg:border-[#FEE600]">
             <p className="font-bold">5. korak</p>

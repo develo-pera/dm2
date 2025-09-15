@@ -21,7 +21,7 @@ const About = () => {
             {" "}
             <a href="https://www.parcl.co/" target="_blank" rel="noopener noreferrer" className="underline">SAD-a</a>, i
             {" "}
-            <a href="https://cointelegraph.com/news/gates-oasys-tokenize-tokyo-real-estate-global-expansion" target="_blank" className="underline">Japana</a> gde ga
+            <a href="https://cointelegraph.com/news/gates-oasys-tokenize-tokyo-real-estate-global-expansion" target="_blank" rel="noopener noreferrer" className="underline">Japana</a> gde ga
             koriste hiljade malih investitora koji žele da ulože pametno, bez prevelikog
             rizika. Sada je ovaj model dostupan i kod nas, kroz dm<sup>2</sup> platformu.
           </p>
@@ -41,12 +41,12 @@ const About = () => {
           <p className="font-bold text-lg uppercase mb-3">Direktna investicija u projekte</p>
           <p>
             Kroz našu platformu investitori mogu da ulože svoj novac direktno u građevinske
-            projekte, tj. stambeno-poslovne komplekse, hotele, kancelarije, poslovne centre,
-            u najranijoj fazi.
+            projekte, tj. stambeno-poslovne komplekse, hotele, kancelarije, poslovne centre, i
+            druge tipove nekretnina, u najranijoj fazi.
           </p>
           <p>Veličina investicije kreće od cene jedne desetine kvadrata u izgradnji,
             tj. 10 decimetara kvadratnih, a moguće je investirati u više decimetara ili
-            metara kvadratnih, pa do jedne ili više celokupnih jedinica.
+            metara kvadratnih, pa do jedne ili više celokupnih nekretnina.
           </p>
         </div>
         <div className="bg-[#242424] text-white p-5 md:p-10 rounded-xs flex flex-col gap-5">
@@ -62,10 +62,10 @@ const About = () => {
           </p>
           <div className="grid grid-cols-[20px_1fr] items-center gap-y-3 gap-x-5">
             <LucideBuilding2 className="!w-5 !h-5 stroke-[#FEE600]" />
-            <p className="leading-tight">Eksluzivne prilike za investiranje dostupne samo vlasnicima tokena</p>
+            <p className="leading-tight">Eksluzivne prilike za investiranje u nekretnine dostupne samo vlasnicima tokena</p>
 
             <LucidePercent className="!w-5 !h-5 stroke-[#FEE600]" />
-            <p className="leading-tight">Povoljnija cena prilikom direktne investicije</p>
+            <p className="leading-tight">Povoljnija cena prilikom direktne investicije u nekretnine kroz decimetre kvadratne</p>
 
             <LucideReceiptEuro className="!w-5 !h-5 stroke-[#FEE600]" />
             <p className="leading-tight">Mogućnost prodaje tokena u bilo kom trenutku po istoj ili većoj ceni od one koju su kupili</p>

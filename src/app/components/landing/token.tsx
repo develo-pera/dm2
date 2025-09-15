@@ -34,11 +34,11 @@ const Token = () => {
               Digitalni tokeni nisu novost na našem tržištu — uspešne primere
               već imamo kroz projekte poput
               {' '}
-              <a href="https://finspot.com/" target="_blank" className="underline">Finspota</a>,
+              <a href="https://finspot.com/" target="_blank" rel="noopener noreferrer" className="underline">Finspota</a>,
               {' '}
-              <a href="https://treesury.com/" target="_blank" className="underline">Treesury-a</a>,
+              <a href="https://treesury.com/" target="_blank" rel="noopener noreferrer" className="underline">Treesury-a</a>,
               {' '}
-              <a href="https://thewalnutfund.com/invest-in-walnut-tokens-sustainable-agriculture-blockchain/" target="_blank" className="underline">Walnut Funda</a>
+              <a href="https://thewalnutfund.com/invest-in-walnut-tokens-sustainable-agriculture-blockchain/" target="_blank" rel="noopener noreferrer" className="underline">Walnut Funda</a>
               {' '}
               i drugih.
             </p>

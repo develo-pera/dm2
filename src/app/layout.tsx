@@ -53,10 +53,10 @@ const incise = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL("https://decimetarkvadratni.com"),
   title: "Ulaganje u nekretnine već od 150€ - Decimetar kvadratni",
-  description: "Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
+  description: "Ulaganje u nekretnine dostupno svima.Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
   openGraph: {
     title: "Ulaganje u nekretnine već od 150€ - Decimetar kvadratni",
-    description: "Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
+    description: "Ulaganje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
     images: [{
       url: "/dm2-og-image.jpg",
       width: 1920,
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ulaganje u nekretnine već od 150€ - Decimetar kvadratni",
-    description: "Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
+    description: "Ulaganje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
     // images: [{
     //   url: "/dm2-og-image.jpg",
     //   width: 1920,
@@ -128,6 +128,7 @@ export default function RootLayout({
         <Toaster />
         <noscript><img height="1" width="1" style={{ display: 'none' }}
           src="https://www.facebook.com/tr?id=1424797298782624&ev=PageView&noscript=1"
+          alt="Facebook Pixel"
         /></noscript>
       </body>
       {/* <GoogleTagManager gtmId="G-627RF9LN8S" /> */}
