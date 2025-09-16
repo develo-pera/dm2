@@ -9,12 +9,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
+      alternates: {
+        languages: {
+          sr: 'https://decimetarkvadratni.com',
+        }
+      },
     },
     {
       url: 'https://decimetarkvadratni.com/politika-privatnosti',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.5,
+      alternates: {
+        languages: {
+          sr: 'https://decimetarkvadratni.com/politika-privatnosti',
+        }
+      },
     }
   ]
 }
