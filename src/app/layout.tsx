@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     }
   },
   title: "Ulaganje u nekretnine već od 150€ - Decimetar kvadratni",
-  description: "Ulaganje u nekretnine dostupno svima.Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
+  description: "Ulaganje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
   openGraph: {
     title: "Ulaganje u nekretnine već od 150€ - Decimetar kvadratni",
     description: "Ulaganje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
