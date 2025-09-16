@@ -54,6 +54,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://decimetarkvadratni.com"),
   alternates: {
     canonical: "/",
+    languages: {
+      "sr": "/"
+    }
   },
   title: "Ulaganje u nekretnine već od 150€ - Decimetar kvadratni",
   description: "Ulaganje u nekretnine dostupno svima.Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
