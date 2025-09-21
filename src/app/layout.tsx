@@ -58,11 +58,11 @@ export const metadata: Metadata = {
       "sr": "/"
     }
   },
-  title: "Ulaganje u nekretnine već od 150€ - Decimetar kvadratni",
-  description: "Ulaganje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
+  title: "Investiranje u nekretnine već od 150€ - Decimetar kvadratni",
+  description: "Investiranje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
   openGraph: {
-    title: "Ulaganje u nekretnine već od 150€ - Decimetar kvadratni",
-    description: "Ulaganje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
+    title: "Investiranje u nekretnine već od 150€ - Decimetar kvadratni",
+    description: "Investiranje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
     images: [{
       url: "/dm2-og-image.jpg",
       width: 1920,
@@ -72,8 +72,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ulaganje u nekretnine već od 150€ - Decimetar kvadratni",
-    description: "Ulaganje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
+    title: "Investiranje u nekretnine već od 150€ - Decimetar kvadratni",
+    description: "Investiranje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
     // images: [{
     //   url: "/dm2-og-image.jpg",
     //   width: 1920,
