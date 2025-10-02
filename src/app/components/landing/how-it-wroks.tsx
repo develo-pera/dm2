@@ -1,7 +1,7 @@
 const HowItWorks = () => {
   return (
     <div id="kako-radi-dm2" className="max-w-7xl mx-auto p-5 py-20">
-      <h2 className="text-4xl font-bold mb-7">Kako radi dm<sup>2</sup></h2>
+      <h2 className="text-4xl font-bold mb-7">Kako radi dm<sup>2</sup> platforma za investiranje u nekretnine</h2>
       <p>
         Koncept dm<sup>2</sup> je jednostavan: umesto jednog velikog investitora
         koji finansira ceo projekat, kod nas više manjih investitora

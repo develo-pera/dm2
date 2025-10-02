@@ -5,7 +5,7 @@ const About = () => {
     <div id="sta-je-dm2" className="max-w-7xl mx-auto p-5 py-20">
       <div className="grid grid-cols-2 gap-5">
         <div className="col-span-2 lg:col-span-1">
-          <h2 className="text-4xl font-bold mb-7">Šta je dm<sup>2</sup></h2>
+          <h2 className="text-4xl font-bold mb-7">Šta je dm<sup>2</sup> — platforma za investiranje u nekretnine</h2>
           <p className="mb-3">
             dm<sup>2</sup> je model investiranja u nekretnine koji Vam omogućava da ulažete u male delove
             – decimetre kvadratne – umesto da kupujete celu nekretninu.
@@ -26,7 +26,7 @@ const About = () => {
             rizika. Sada je ovaj model dostupan i kod nas, kroz dm<sup>2</sup> platformu.
           </p>
           <p className="mb-3">
-            Ulaganje se dešava u najranijoj, projektnoj fazi, kada su cene najniže.
+            Investiranje se dešava u najranijoj, projektnoj fazi, kada su cene najniže.
             Nakon izgradnje, nekretnine se prodaju krajnjim kupcima, a profit se deli
             između investitora u projekte, vlasnika DM2 tokena i samog tima
             koji vodi realizaciju.
