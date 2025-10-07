@@ -36,7 +36,7 @@ export const subscribeToMailchimp = async (email: string, interestedIn?: Interes
       interests,
       merge_fields: {
         "INVESTMENT": investmentAmount,
-        "NAME": name,
+        "FNAME": name,
         "LNAME": surname,
         "PHONE": phone,
       },
