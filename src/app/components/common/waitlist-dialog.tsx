@@ -15,6 +15,13 @@ const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
   const investmentAmountRef = useRef<HTMLInputElement>(null);
 
   const handleSubscribe = async () => {
+    // Normalize phone: keep leading '+' only if first char, strip all non-digits otherwise
+    if (phoneRef.current?.value) {
+      const raw = phoneRef.current.value;
+      const hasLeadingPlus = raw.trim().startsWith("+");
+      const digitsOnly = raw.replace(/\D+/g, "");
+      phoneRef.current.value = hasLeadingPlus ? `+${digitsOnly}` : digitsOnly;
+    }
 
     if (!nameRef.current?.value) {
       toast.error("Ime je obavezno");
@@ -46,8 +53,6 @@ const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
       return;
     }
 
-    console.log("interestedIn", interestedIn);
-
     if (!interestedIn) {
       toast.error("Vrsta investicije je obavezna");
       return;
@@ -63,7 +68,14 @@ const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
     try {
       const response = await fetch("/api/mailchimp", {
         method: "POST",
-        body: JSON.stringify({ email: emailRef.current.value, interestedIn: interestedIn, investmentAmount: investmentAmountRef.current.value }),
+        body: JSON.stringify({
+          email: emailRef.current.value,
+          interestedIn: interestedIn,
+          investmentAmount: investmentAmountRef.current.value,
+          name: nameRef.current.value,
+          surname: surnameRef.current.value,
+          phone: phoneRef.current.value
+        }),
       });
 
       const data = await response.json();

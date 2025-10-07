@@ -1,4 +1,4 @@
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { LucideMenu } from "lucide-react";
 import MainMenu from "./main-menu";
 import NavigationCtaAndContact from "./navigation-cta-and-contact";
