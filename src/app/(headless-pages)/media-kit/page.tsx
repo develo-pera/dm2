@@ -1,4 +1,6 @@
+import { MOBILE_NUMBER } from "@/lib/consts";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Media Kit - Decimetar kvadratni",
@@ -8,7 +10,12 @@ export const metadata: Metadata = {
 const MediaKit = async () => {
   return (
     <div className="max-w-5xl mx-auto p-5 py-20">
-      <img className="w-50 mb-10" src="/dm2-logo.svg" alt="Decimetar kvadratni" />
+      <div className="flex justify-between items-center mb-10">
+        <img className="w-50" src="/dm2-logo.svg" alt="Decimetar kvadratni" />
+        <Link className="bg-[#242424] text-white px-4 py-2 rounded-xs hidden sm:block" href="/" target="_blank" rel="noopener noreferrer">
+          &larr; Idite na sajt
+        </Link>
+      </div>
       <h1 className="text-4xl font-bold mb-7">Media Kit</h1>
 
       <div className="my-10">
@@ -64,7 +71,7 @@ const MediaKit = async () => {
           </p>
           <p>Obe verzije logoa su dostupne u SVG, PNG i JPG formatu, kao i u tamnoj i svijetloj varijanti.</p>
 
-          <div className="my-10 grid grid-cols-2 gap-5">
+          <div className="my-10 grid sm:grid-cols-2 gap-5">
             <img src="/dm2-logo-example.jpg" alt="Decimetar kvadratni primeri logoa" />
             <img src="/dm2-icon-example.jpg" alt="Decimetar kvadratni primeri ikonica" />
           </div>
@@ -82,7 +89,7 @@ const MediaKit = async () => {
           Decimetar kvadratni ima dve primarne boje: <strong>crna</strong> i <strong>žuta</strong>, kao i nekoliko sekundarnih boja.
         </p>
 
-        <div className="flex gap-5 mt-5">
+        <div className="flex flex-wrap gap-5 mt-5">
           <div>
             <div className="w-32 h-32 bg-[#242424] mb-2" />
             <p className="text-sm">Crna (#242424)</p>
@@ -104,16 +111,17 @@ const MediaKit = async () => {
 
       <div className="my-10">
         <h2 className="text-2xl font-bold mb-7">Linkovi</h2>
-        <p>Instagram: <a className="underline" href="https://instagram.com/decimetarkvadratni/" target="_blank" rel="noopener noreferrer">https://instagram.com/decimetarkvadratni/</a></p>
-        <p>LinkedIn: <a className="underline" href="https://www.linkedin.com/company/decimetar-kvadratni" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/company/decimetar-kvadratni</a></p>
-        <p>Facebook: <a className="underline" href="https://www.facebook.com/decimetarkvadratni" target="_blank" rel="noopener noreferrer">https://www.facebook.com/decimetarkvadratni</a></p>
-        <p>Twitter: <a className="underline" href="https://x.com/decimetar2" target="_blank" rel="noopener noreferrer">https://x.com/decimetar2</a></p>
+        <p>Website: <a className="underline break-all" href="https://decimetarkvadratni.com" target="_blank" rel="noopener noreferrer">decimetarkvadratni.com</a></p>
+        <p>Instagram: <a className="underline break-all" href="https://instagram.com/decimetarkvadratni/" target="_blank" rel="noopener noreferrer">https://instagram.com/decimetarkvadratni/</a></p>
+        <p>LinkedIn: <a className="underline break-all" href="https://www.linkedin.com/company/decimetar-kvadratni" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/company/decimetar-kvadratni</a></p>
+        <p>Facebook: <a className="underline break-all" href="https://www.facebook.com/decimetarkvadratni" target="_blank" rel="noopener noreferrer">https://www.facebook.com/decimetarkvadratni</a></p>
+        <p>Twitter: <a className="underline break-all" href="https://x.com/decimetar2" target="_blank" rel="noopener noreferrer">https://x.com/decimetar2</a></p>
       </div>
 
       <div className="my-10">
         <h2 className="text-2xl font-bold mb-7">Kontakt</h2>
         <p>Email: <a className="underline" href="mailto:info@decimetarkvadratni.com">info@decimetarkvadratni.com</a></p>
-        <p>Telefon: <a className="underline" href="tel:+381641234567">+381641234567</a></p>
+        <p>Telefon: <a className="underline" href={`tel:${MOBILE_NUMBER.replaceAll(" ", "")}`}>{MOBILE_NUMBER}</a></p>
       </div>
     </div >
   );
