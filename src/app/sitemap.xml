@@ -1,0 +1,26 @@
+<urlset
+	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<script id="argent-x-extension" data-extension-id="dlcobpjiigpikoobohmabehhmhfoodbb"/>
+	<url>
+		<loc>https://decimetarkvadratni.com</loc>
+		<xhtml:link rel="alternate" hreflang="sr" href="https://decimetarkvadratni.com"/>
+		<lastmod>2025-10-13T07:21:48.297Z</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://decimetarkvadratni.com/politika-privatnosti</loc>
+		<xhtml:link rel="alternate" hreflang="sr" href="https://decimetarkvadratni.com/politika-privatnosti"/>
+		<lastmod>2025-10-13T07:21:48.297Z</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://decimetarkvadratni.com/media-kit</loc>
+		<xhtml:link rel="alternate" hreflang="sr" href="https://decimetarkvadratni.com/media-kit"/>
+		<lastmod>2025-10-13T07:21:48.297Z</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+</urlset>

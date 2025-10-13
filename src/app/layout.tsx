@@ -2,10 +2,6 @@ import type { Metadata } from "next";
 import { Geist_Mono, Space_Grotesk } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navigation from "./components/common/navigation";
-import Footer from "./components/common/footer";
-import ComingSoon from "./components/common/coming-soon";
-// import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
 import { Toaster } from "@/components/ui/sonner";
 
@@ -74,16 +70,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Investiranje u nekretnine već od 150€ - Decimetar kvadratni",
     description: "Investiranje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
-    // images: [{
-    //   url: "/dm2-og-image.jpg",
-    //   width: 1920,
-    //   height: 1080,
-    //   alt: "Decimetar kvadratni"
-    // }]
   },
 };
-
-const isComingSoon = false;
 
 export default function RootLayout({
   children,
@@ -120,24 +108,13 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} ${geistMono.variable} ${incise.variable} antialiased`}
       >
-        {
-          !isComingSoon ? (
-            <>
-              <Navigation />
-              {children}
-              <Footer />
-            </>
-          ) : (
-            <ComingSoon />
-          )
-        }
+        {children}
         <Toaster />
         <noscript><img height="1" width="1" style={{ display: 'none' }}
           src="https://www.facebook.com/tr?id=1424797298782624&ev=PageView&noscript=1"
           alt="Facebook Pixel"
         /></noscript>
       </body>
-      {/* <GoogleTagManager gtmId="G-627RF9LN8S" /> */}
     </html>
   );
 }
