@@ -1,5 +1,19 @@
 {
+  "Navigation": {
+    "primary-cta": "Invest in Real Estate",
+    "about": "About dm<sup>2</sup>",
+    "how-it-works": "How dm<sup>2</sup> Works",
+    "token": "DM2 Token",
+    "calculator": "Investment Calculator",
+    "projects": "Upcoming Projects",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
   "Home": {
-    "subtitle": "Access real estate investments from €150"
+    "subtitle": "Access real estate investments from €150",
+    "title": "Invest in fractional real estate and earn up to 30% annual passive income",
+    "primary-cta": "Invest in Real Estate",
+    "join-waitlist": "Join the Waitlist",
+    "learn-more": "Learn more"
   }
 }

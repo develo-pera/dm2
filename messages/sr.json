@@ -1,5 +1,19 @@
 {
+  "Navigation": {
+    "primary-cta": "Uložite u nekretnine",
+    "about": "Šta je dm<sup>2</sup>",
+    "how-it-works": "Kako radi dm2",
+    "token": "DM2 token",
+    "calculator": "Kalkulator",
+    "projects": "Planirani projekti",
+    "faq": "Često postavljana pitanja",
+    "contact": "Kontakt"
+  },
   "Home": {
-    "subtitle": "Investiranje u nekretnine već od 150€"
+    "subtitle": "Investiranje u nekretnine već od 150€",
+    "title": "Investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
+    "primary-cta": "Uložite u nekretnine",
+    "join-waitlist": "Prijavite se na listu čekanja",
+    "learn-more": "Saznajte više"
   }
 }

@@ -13,17 +13,17 @@ const Hero = () => {
           <h1 className="text-2xl md:text-3xl font-black leading-[1.1] text-white">{t("subtitle")}</h1>
         </div>
         <h2 className="text-3xl sm:text-5xl md:text-7xl font-black leading-[1.1] max-w-2xl md:max-w-[1000px]">
-          Investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje
+          {t("title")}
         </h2>
         <div className="flex flex-wrap gap-5 mt-10">
           <WaitlistDialog>
             <div className="bg-[#FEE600] font-bold px-8 py-3 rounded-xs">
-              Prijavite se na listu čekanja
+              {t("join-waitlist")}
             </div>
           </WaitlistDialog>
           <Link href="#sta-je-dm2">
             <button className="bg-zinc-100 font-bold px-8 py-3 rounded-xs">
-              Saznajte više
+              {t("learn-more")}
             </button>
           </Link>
         </div>
