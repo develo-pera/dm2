@@ -11,7 +11,7 @@ const Navigation = () => {
           <Link href="/">
             <img className="h-[35px]" src="/dm2-logo.svg" alt="logo" />
           </Link>
-          <div className="flex items-center gap-10">
+          <div className="flex items-center gap-5">
             <div className="hidden md:block">
               <NavigationCtaAndContact />
             </div>

@@ -1,12 +1,13 @@
 import { PhoneCall } from "lucide-react";
 import WaitlistDialog from "./waitlist-dialog";
 import { MOBILE_NUMBER } from "@/lib/consts";
+import LanguageSwitcher from "./language-switcher";
 
 const NavigationCtaAndContact = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-7 items-center mt-10 md:mt-0">
+    <div className="flex flex-col md:flex-row gap-3 items-center mt-10 md:mt-0">
       <a href={`tel:${MOBILE_NUMBER.replace(/\s+/g, '')}`}>
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-center md:mr-2">
           <PhoneCall className="h-[20px]" />
           <p className="font-bold">{MOBILE_NUMBER}</p>
         </div>
@@ -17,6 +18,7 @@ const NavigationCtaAndContact = () => {
           Uložite u nekretnine
         </div>
       </WaitlistDialog>
+      <LanguageSwitcher />
     </div>
   );
 };

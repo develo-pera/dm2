@@ -9,6 +9,7 @@ import Projects from "../components/landing/projects";
 import Calculator from "../components/landing/calculator";
 
 export default function Home() {
+
   return (
     <div>
       <Hero />
