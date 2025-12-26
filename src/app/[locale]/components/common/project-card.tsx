@@ -1,6 +1,8 @@
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 const ProjectCard = ({ images }: { images: string[] }) => {
+  const t = useTranslations("Home")
   const [currentImage, setCurrentImage] = useState(0);
 
   const incrementImage = () => {
@@ -24,20 +26,17 @@ const ProjectCard = ({ images }: { images: string[] }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 bg-[#fee600] rounded-xs overflow-hidden">
         <div>
           <div className="bg-[#242424] text-white px-5 py-10">
-            <h3 className="text-2xl font-bold mb-5">King&apos;s Court – Pilot projekat</h3>
-            <p>
-              Život dostojan kralja! <br /><br />
-              Prvi projekat koji će biti realizovan putem dm<sup>2</sup> platforme. Planirana zgrada se nalazi u Novoj Pazovi, u glavnoj ulici, na samo 30 minuta od centra Beograda.
-              Investitorima će biti omogućen ulazak kroz javno finansiranje decimetara kvadratnih, odmah nakon završetka inicijalne ponude tokena.</p>
+            <h3 className="text-2xl font-bold mb-5">{t("planned-projects.card-title")}</h3>
+            <p>{t.rich("planned-projects.card-paragraph-1", { br: (chunks) => <br />, sup: (chunks) => <sup>{chunks}</sup> })}</p>
           </div>
 
           <div className="grid grid-cols-2 gap-3 px-5 py-10 text-sm">
-            <p><span className="font-bold">Lokacija</span><br />Nova Pazova</p>
-            <p><span className="font-bold">Tip</span><br />Stambeno-poslovna jedinica</p>
-            <p><span className="font-bold">Površina</span><br />2.000 m<sup>2</sup></p>
-            <p><span className="font-bold">Broj decimetara kvadratnih</span><br />200.000 dm<sup>2</sup></p>
-            <p><span className="font-bold">Cena m<sup>2</sup> u izgradnji</span><br />1200€</p>
-            <p><span className="font-bold">Prodajna cena m<sup>2</sup></span><br />1900€</p>
+            <p><span className="font-bold">{t("planned-projects.card-paragraph-2")}</span><br />{t("planned-projects.card-paragraph-3")}</p>
+            <p><span className="font-bold">{t("planned-projects.card-paragraph-4")}</span><br />{t("planned-projects.card-paragraph-5")}</p>
+            <p><span className="font-bold">{t("planned-projects.card-paragraph-6")}</span><br />{t.rich("planned-projects.card-paragraph-7", { sup: (chunks) => <sup>{chunks}</sup> })}</p>
+            <p><span className="font-bold">{t("planned-projects.card-paragraph-8")}</span><br />{t.rich("planned-projects.card-paragraph-9", { sup: (chunks) => <sup>{chunks}</sup> })}</p>
+            <p><span className="font-bold">{t.rich("planned-projects.card-paragraph-10", { sup: (chunks) => <sup>{chunks}</sup> })}</span><br />{t("planned-projects.card-paragraph-11")}</p>
+            <p><span className="font-bold">{t.rich("planned-projects.card-paragraph-12", { sup: (chunks) => <sup>{chunks}</sup> })}</span><br />{t("planned-projects.card-paragraph-13")}</p>
           </div>
         </div>
         <div className="flex flex-col">
@@ -47,12 +46,12 @@ const ProjectCard = ({ images }: { images: string[] }) => {
               style={{ backgroundImage: `url('${images[currentImage]}')` }}
             />
             <div className="absolute top-0 left-0 w-full h-full bg-black/40 flex items-center justify-center">
-              <p className="text-white text-2xl font-bold">King&apos;s Court Nova Pazova</p>
+              <p className="text-white text-2xl font-bold">{t("planned-projects.overlay-title")}</p>
             </div>
           </div>
           <div className="grid grid-cols-2">
-            <button className="bg-zinc-100 text-black p-3 font-bold border-r border-black" onClick={decrementImage}>← Prethodna slika</button>
-            <button className="bg-zinc-100 text-black p-3 font-bold border-black" onClick={incrementImage}>Sledeća slika →</button>
+            <button className="bg-zinc-100 text-black p-3 font-bold border-r border-black" onClick={decrementImage}>← {t("planned-projects.previous-button")}</button>
+            <button className="bg-zinc-100 text-black p-3 font-bold border-black" onClick={incrementImage}>{t("planned-projects.next-button")} →</button>
           </div>
         </div>
       </div>

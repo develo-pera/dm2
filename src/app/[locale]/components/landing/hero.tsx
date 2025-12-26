@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link";
 import WaitlistDialog from "../common/waitlist-dialog";
 import { useTranslations } from "next-intl";

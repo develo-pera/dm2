@@ -12,6 +12,8 @@ export default function LanguageSwitcher() {
   const currentPathname = usePathname();
 
   const handleValueChange = (value: string) => {
+    console.log(value)
+    console.log(locale)
     const newLocale = value;
 
     // set cookie for next-i18n-router

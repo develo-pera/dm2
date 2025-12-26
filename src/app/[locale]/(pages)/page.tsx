@@ -1,7 +1,7 @@
 
 import Hero from "../components/landing/hero";
 import About from "../components/landing/about";
-import HowItWorks from "../components/landing/how-it-wroks";
+import HowItWorks from "../components/landing/how-it-works";
 import Token from "../components/landing/token";
 import Faq from "../components/landing/faq";
 import Team from "../components/landing/team";

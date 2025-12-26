@@ -1,0 +1,104 @@
+{
+  "faq": [
+    {
+      "question": "What does the term “square decimeter” mean?",
+      "answer": "A square decimeter is the smallest accounting unit you can invest in on the platform. All costs are calculated based on this unit, and any profit generated after the sale is distributed accordingly."
+    },
+    {
+      "question": "Can I invest in multiple square decimeters?",
+      "answer": "Yes. You can invest in multiple square decimeters, as well as in multiple square meters.</br></br>Please note that this does not grant ownership of physical property units, but rather the right to participate in a share of the profit generated from the sale. Ownership of the properties is transferred to end buyers."
+    },
+    {
+      "question": "Who can invest?",
+      "answer": "Our current offering is primarily focused on Serbia, however investors from around the world are welcome. You are advised to check whether there are any legal restrictions for this type of investment in your country of residence."
+    },
+    {
+      "question": "Can foreign nationals invest?",
+      "answer": "Yes, foreign nationals are able to invest. Payments are made in foreign currency."
+    },
+    {
+      "question": "Can a legal entity invest?",
+      "answer": "Yes. The main difference applies to tax treatment, which may vary depending on the legal structure."
+    },
+    {
+      "question": "What is the difference between square decimeters and DM2 tokens?",
+      "answer": "A square decimeter represents participation in a specific future property before construction begins. This is a single-project investment, where returns are realized after the sale of the completed project.</br></br>DM2 tokens represent participation in the underlying economic activity of the dm<sup>2</sup> platform. Token holders may be entitled to a share of profits from future projects realized through the platform. The model is conceptually similar to equity participation, where returns may be distributed over time."
+    },
+    {
+      "question": "Why real estate?",
+      "answer": "The real estate market represents one of the key pillars of the global economy, with an estimated total value exceeding $300 trillion. Historically, real estate has been viewed as a long-term asset class that may offer stability compared to more volatile markets."
+    },
+    {
+      "question": "How do you select projects?",
+      "answer": "Our team continuously analyzes market conditions, identifies attractive locations and opportunities, and prepares financial assessments in order to evaluate potential projects."
+    },
+    {
+      "question": "How many projects do you plan to launch per year?",
+      "answer": "Our goal is to initiate several projects per year, depending on market conditions and available opportunities."
+    },
+    {
+      "question": "Will projects be located only in Serbia?",
+      "answer": "Initially, yes. Over the long term, we plan to expand into additional markets. Regions of interest currently include Dubai, parts of East Africa, and Latin America, subject to feasibility and regulatory considerations."
+    },
+    {
+      "question": "What is the minimum investment in DM2 tokens?",
+      "answer": "During the Initial Token Offering, the minimum investment amount is €150. Afterward, tokens may be available on the secondary market, potentially in smaller amounts."
+    },
+    {
+      "question": "What is the minimum investment in square decimeters?",
+      "answer": "The minimum investment is 10 square decimeters, equivalent to 0.1 m²."
+    },
+    {
+      "question": "Is there a maximum investment limit?",
+      "answer": "DM2 tokens: up to €100,000 during the Initial Token Offering.</br></br>Square decimeters: limited by the total surface area of the specific project."
+    },
+    {
+      "question": "What payment methods are supported?",
+      "answer": "We accept major credit cards and bank transfers. If your preferred payment method is not listed, please contact us and we will try to accommodate your request where possible."
+    },
+    {
+      "question": "How can I track my investments?",
+      "answer": "All relevant details can be monitored through your account on the platform, including invested amounts, realized and projected returns, and referral rewards."
+    },
+    {
+      "question": "How does the referral program work?",
+      "answer": "<strong>There are two types of referral programs available on the platform:</strong></br>- DM2 token referral program (during the Security Token Offering)</br>- Square decimeter referral program (each project has its own referral program during the funding phase)</br></br></br><strong style='font-size: 1.2rem;'>DM2 token referral program</strong></br></br><strong>Eligibility:</strong></br>- You must hold at least 150 DM2 tokens</br></br><strong>How it works:</strong></br>- You may earn a bonus of up to 5% of the total number of DM2 tokens purchased by users you refer</br>- The bonus percentage depends on your level, which is determined by the number of square decimeters you hold in a specific project</br></br><table><tr><th>Number of tokens held</th><th>Bonus percentage</th></tr><tr><td>150–500</td><td>1%</td></tr><tr><td>500–1500</td><td>1.5%</td></tr><tr><td>1500–5000</td><td>2%</td></tr><tr><td>5000–10000</td><td>3%</td></tr><tr><td>10000–30000</td><td>4%</td></tr><tr><td>30000+</td><td>5%</td></tr></table></br><strong>How to invite others:</strong></br>- Log in to your account at <a href='https://platforma.decimetarkvadratni.com' target='_blank' rel='noopener noreferrer'>platforma.decimetarkvadratni.com</a></br>- Open the My Account page to find your unique referral link</br>- Share the link with your network</br></br><br/><br/><strong style='font-size: 1.2rem;'>Square decimeter referral program</strong></br></br><strong>Eligibility:</strong></br>- You must hold at least 10 square decimeters in the active project</br>- Referred users must be new investors</br></br><strong>How it works:</strong></br>- You may earn a bonus of up to 3% of the total square decimeters purchased by referred users</br>- Bonus percentage depends on your level</br></br><table><tr><th>Number of dm² held</th><th>Bonus percentage</th></tr><tr><td>1–10</td><td>1%</td></tr><tr><td>10–50</td><td>1.5%</td></tr><tr><td>50–150</td><td>2%</td></tr><tr><td>150+</td><td>3%</td></tr></table></br><strong>How to invite others:</strong></br>- Log in to your account</br>- Open My Projects and select an active project</br>- Share the project-specific referral link"
+    },
+    {
+      "question": "When are returns distributed?",
+      "answer": "Returns are distributed as property sales are completed. Allocation is based on the proportional share of square decimeters held relative to the total project area. Distribution timing depends on the receipt of funds from end buyers."
+    },
+    {
+      "question": "How are returns paid out?",
+      "answer": "Payouts are made to the bank account of your choice, which you provide through your dm² user dashboard."
+    },
+    {
+      "question": "Is there a minimum payout amount?",
+      "answer": "The minimum payout amount is €100. This threshold is set to cover administrative and transaction costs."
+    },
+    {
+      "question": "Can I reinvest my returns instead of withdrawing them?",
+      "answer": "Yes. You may choose to reinvest your returns into new square decimeters or DM2 tokens, subject to availability."
+    },
+    {
+      "question": "Do I receive proof of ownership?",
+      "answer": "Square decimeters serve as proof of participation in a project prior to construction and form the basis for profit allocation. Purchasing square decimeters does not constitute legal ownership of the property."
+    },
+    {
+      "question": "What is a Security Token Offering?",
+      "answer": "A Security Token Offering (STO) involves the issuance of digital tokens that represent rights linked to real-world assets. These tokens operate through smart contracts and automation, combining regulatory compliance with the efficiency and transparency of blockchain technology."
+    },
+    {
+      "question": "Why and how does dm² use blockchain?",
+      "answer": "Blockchain technology underpins the dm² platform and represents a core component of the Web3 paradigm — a decentralized evolution of the internet.</br></br>While Web2 relies on centralized platforms controlled by large corporations, Web3 enables direct user interaction through decentralized networks, with transactions recorded on a transparent and immutable blockchain."
+    },
+    {
+      "question": "Do cryptocurrency market fluctuations affect the price of DM2 tokens?",
+      "answer": "DM2 tokens are not directly linked to cryptocurrency market price movements. Their value is associated with underlying real estate projects and related economic activity. Market conditions, project performance, and other factors may influence outcomes.</br></br>Any mechanisms related to minimum pricing or buyback are subject to the applicable terms and conditions."
+    },
+    {
+      "question": "Do I need a crypto wallet or blockchain knowledge?",
+      "answer": "No. When creating an account on the dm² platform, a digital wallet is automatically generated and linked to your email address. The platform is designed to be used without prior blockchain experience.</br></br>You may transfer your assets to an external wallet at any time, should you choose to do so."
+    }
+  ]
+}
