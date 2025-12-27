@@ -3,19 +3,21 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter, DialogTrigger } from "@/components/ui/dialog";
 import { useRef, useState } from "react";
 import { toast } from "sonner";
+import { useTranslations } from "next-intl";
 
 const NewsletterDialog = ({ children }: { children: React.ReactNode }) => {
+  const t = useTranslations("Home");
   const [sending, setSending] = useState(false);
   const emailRef = useRef<HTMLInputElement>(null);
 
   const handleSubscribe = async () => {
     if (!emailRef.current?.value) {
-      toast.error("Email je obavezan");
+      toast.error(t("newsletter-dialog.email-required"));
       return;
     }
 
     if (!emailRef.current.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
-      toast.error("Email nije validan");
+      toast.error(t("newsletter-dialog.email-invalid"));
       return;
     }
 
@@ -27,13 +29,13 @@ const NewsletterDialog = ({ children }: { children: React.ReactNode }) => {
       });
       const data = await response.json();
       if (data.success) {
-        toast.success("Uspešno ste se pretplatili na našu mejling listu");
+        toast.success(t("newsletter-dialog.submit-success"));
         emailRef.current.value = "";
       } else {
         toast.error(data.message);
       }
     } catch (error) {
-      toast.error("Došlo je do greške prilikom pretplate na našu mejling listu, pokušajte ponovo kasnije.");
+      toast.error(t("newsletter-dialog.submit-error"));
     }
     setSending(false);
   };
@@ -45,20 +47,20 @@ const NewsletterDialog = ({ children }: { children: React.ReactNode }) => {
       </DialogTrigger>
       <DialogContent className="rounded-xs">
         <DialogHeader>
-          <DialogTitle className="text-xl font-bold mt-5">Prijavite se na našu mejling listu</DialogTitle>
+          <DialogTitle className="text-xl font-bold mt-5">{t("newsletter-dialog.title")}</DialogTitle>
           <DialogDescription className="mb-5">
-            Prijavite se na našu mejling listu da biste dobijali najnovije informacije o projektima i prilikama za investiranje na dm<sup>2</sup> platformi, kao i ostalim aktivnostima.
+            {t.rich("newsletter-dialog.description", { sup: (chunks) => <sup>{chunks}</sup> })}
           </DialogDescription>
         </DialogHeader>
 
         <div>
-          <p>Email</p>
-          <input ref={emailRef} className="border border-zinc-200 rounded-xs p-2 w-full mt-2 mb-1" type="text" placeholder="Email" />
-          <p className="text-sm text-zinc-500">Nema spama, obećavamo.</p>
+          <p>{t("newsletter-dialog.email-label")}</p>
+          <input ref={emailRef} className="border border-zinc-200 rounded-xs p-2 w-full mt-2 mb-1" type="text" placeholder={t("newsletter-dialog.email-placeholder")} />
+          <p className="text-sm text-zinc-500">{t("newsletter-dialog.disclaimer")}</p>
         </div>
 
         <DialogFooter>
-          <button onClick={handleSubscribe} className="bg-[#242424] text-white px-8 py-3 rounded-xs font-bold cursor-pointer">{sending ? "Slanje u toku..." : "Prijavite se"}</button>
+          <button onClick={handleSubscribe} className="bg-[#242424] text-white px-8 py-3 rounded-xs font-bold cursor-pointer">{sending ? t("newsletter-dialog.submit-loading") : t("newsletter-dialog.submit-button")}</button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

@@ -2,10 +2,12 @@
 
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { useTranslations } from "next-intl";
 import { useRef, useState } from "react";
 import { toast } from "sonner";
 
 const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
+  const t = useTranslations("Home");
   const [sending, setSending] = useState(false);
   const nameRef = useRef<HTMLInputElement>(null);
   const surnameRef = useRef<HTMLInputElement>(null);
@@ -24,43 +26,43 @@ const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
     }
 
     if (!nameRef.current?.value) {
-      toast.error("Ime je obavezno");
+      toast.error(t("waitlist-dialog.name-required"));
       return;
     }
 
     if (!surnameRef.current?.value) {
-      toast.error("Prezime je obavezno");
+      toast.error(t("waitlist-dialog.surname-required"));
       return;
     }
 
     if (!emailRef.current?.value) {
-      toast.error("Email je obavezan");
+      toast.error(t("waitlist-dialog.email-required"));
       return;
     }
 
     if (!emailRef.current.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
-      toast.error("Email nije validan");
+      toast.error(t("waitlist-dialog.email-invalid"));
       return;
     }
 
     if (!phoneRef.current?.value) {
-      toast.error("Telefon je obavezan");
+      toast.error(t("waitlist-dialog.phone-required"));
       return;
     }
 
     if (!phoneRef.current.value.match(/^\+?[1-9]\d{1,14}$/) && !phoneRef.current.value.match(/^\d{9,10}$/)) {
-      toast.error("Telefon nije validan");
+      toast.error(t("waitlist-dialog.phone-invalid"));
       return;
     }
 
     if (!interestedIn) {
-      toast.error("Vrsta investicije je obavezna");
+      toast.error(t("waitlist-dialog.interested-in-required"));
       return;
     }
 
 
     if (!investmentAmountRef.current?.value) {
-      toast.error("Iznos investicije je obavezan");
+      toast.error(t("waitlist-dialog.investment-amount-required"));
       return;
     }
 
@@ -80,7 +82,7 @@ const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
 
       const data = await response.json();
       if (data.success) {
-        toast.success("Uspešno ste se prijavili na listu čekanja");
+        toast.success(t("waitlist-dialog.submit-success"));
         nameRef.current.value = "";
         surnameRef.current.value = "";
         emailRef.current.value = "";
@@ -88,13 +90,13 @@ const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
         setInterestedIn("");
         investmentAmountRef.current.value = "";
       } else {
-        toast.error("Došlo je do greške prilikom prijave na listu čekanja, pokušajte ponovo kasnije.");
+        toast.error(t("waitlist-dialog.submit-error"));
         setSending(false);
         return;
       }
 
     } catch (error) {
-      toast.error("Došlo je do greške prilikom prijave na listu čekanja, pokušajte ponovo kasnije.");
+      toast.error(t("waitlist-dialog.submit-error"));
     }
     setSending(false);
   };
@@ -104,35 +106,35 @@ const WaitlistDialog = ({ children }: { children: React.ReactNode }) => {
       <DialogTrigger>{children}</DialogTrigger>
       <DialogContent className="DialogContent rounded-xs">
         <DialogHeader>
-          <DialogTitle className="text-xl font-bold mt-5">Prijavite se na listu čekanja</DialogTitle>
+          <DialogTitle className="text-xl font-bold mt-5">{t("waitlist-dialog.title")}</DialogTitle>
           <DialogDescription className="mb-5">
-            Prijavite se na listu čekanja da biste dobili prvu poruku o otvaranju prodaje kako ne biste propustili priliku da kupite tokene po prodajnoj ceni.
+            {t.rich("waitlist-dialog.description", { sup: (chunks) => <sup>{chunks}</sup> })}
           </DialogDescription>
         </DialogHeader>
         <div>
-          <p>Ime</p>
-          <input ref={nameRef} className="border border-zinc-200 rounded-xs p-2 w-full mb-3" type="text" placeholder="Ime" />
-          <p>Prezime</p>
-          <input ref={surnameRef} className="border border-zinc-200 rounded-xs p-2 w-full mb-3" type="text" placeholder="Prezime" />
-          <p>Email</p>
-          <input ref={emailRef} className="border border-zinc-200 rounded-xs p-2 w-full mb-3" type="text" placeholder="Email" />
-          <p>Telefon</p>
-          <input ref={phoneRef} className="border border-zinc-200 rounded-xs p-2 w-full mb-3" type="text" placeholder="Telefon" />
-          <p>Vrsta investicije za koju ste zainteresovani</p>
+          <p>{t("waitlist-dialog.name-label")}</p>
+          <input ref={nameRef} className="border border-zinc-200 rounded-xs p-2 w-full mb-3" type="text" placeholder={t("waitlist-dialog.name-placeholder")} />
+          <p>{t("waitlist-dialog.surname-label")}</p>
+          <input ref={surnameRef} className="border border-zinc-200 rounded-xs p-2 w-full mb-3" type="text" placeholder={t("waitlist-dialog.surname-placeholder")} />
+          <p>{t("waitlist-dialog.email-label")}</p>
+          <input ref={emailRef} className="border border-zinc-200 rounded-xs p-2 w-full mb-3" type="text" placeholder={t("waitlist-dialog.email-placeholder")} />
+          <p>{t("waitlist-dialog.phone-label")}</p>
+          <input ref={phoneRef} className="border border-zinc-200 rounded-xs p-2 w-full mb-3" type="text" placeholder={t("waitlist-dialog.phone-placeholder")} />
+          <p>{t("waitlist-dialog.interested-in-label")}</p>
           <Select onValueChange={(value) => setInterestedIn(value)} value={interestedIn}>
             <SelectTrigger className="border border-zinc-200 rounded-xs p-2 !w-full mb-4 text-md">
-              <SelectValue placeholder="Izaberite vrstu investicije" />
+              <SelectValue placeholder={t("waitlist-dialog.interested-in-placeholder")} />
             </SelectTrigger>
             <SelectContent className="rounded-xs">
-              <SelectItem value="TOKENS">DM2 tokeni</SelectItem>
-              <SelectItem value="SQUARE_DECIMETERS">decimetri kvadratni</SelectItem>
-              <SelectItem value="BOTH">I tokeni, i decimetri kvadratni</SelectItem>
+              <SelectItem value="TOKENS">{t("waitlist-dialog.interested-in-option-1")}</SelectItem>
+              <SelectItem value="SQUARE_DECIMETERS">{t("waitlist-dialog.interested-in-option-2")}</SelectItem>
+              <SelectItem value="BOTH">{t("waitlist-dialog.interested-in-option-3")}</SelectItem>
             </SelectContent>
           </Select>
-          <p>Koliko biste bili spremni da ulozite u evrima?</p>
-          <input ref={investmentAmountRef} className="border border-zinc-200 rounded-xs p-2 w-full" type="text" placeholder="Iznos investicije u evrima" />
+          <p>{t("waitlist-dialog.investment-amount-label")}</p>
+          <input ref={investmentAmountRef} className="border border-zinc-200 rounded-xs p-2 w-full" type="text" placeholder={t("waitlist-dialog.investment-amount-placeholder")} />
 
-          <button onClick={handleSubscribe} className="bg-[#FEE600] font-bold px-8 py-3 rounded-xs w-full mt-10">{sending ? "Slanje u toku..." : "Prijavite se"}</button>
+          <button onClick={handleSubscribe} className="bg-[#FEE600] font-bold px-8 py-3 rounded-xs w-full mt-10">{sending ? t("waitlist-dialog.submit-loading") : t("waitlist-dialog.submit-button")}</button>
         </div>
       </DialogContent>
     </Dialog>
