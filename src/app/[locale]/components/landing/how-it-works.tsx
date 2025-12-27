@@ -1,10 +1,17 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { localeIdAttribute } from "@/i18n/helpers";
+
+const localeIdMap = {
+  sr: "kako-radi-dm2",
+  en: "how-it-works"
+}
 
 const HowItWorks = () => {
   const t = useTranslations("Home");
+  const locale = useLocale();
 
   return (
-    <div id="kako-radi-dm2" className="max-w-7xl mx-auto p-5 py-20">
+    <div id={localeIdAttribute(locale, localeIdMap)} className="max-w-7xl mx-auto p-5 py-20">
       <h2 className="text-4xl font-bold mb-7">{t.rich("how-it-works.title", { sup: (chunks) => <sup>{chunks}</sup> })}</h2>
       <p>
         {t.rich("how-it-works.description-p-1", { sup: (chunks) => <sup>{chunks}</sup> })}

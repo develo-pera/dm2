@@ -1,11 +1,17 @@
+import { localeIdAttribute } from "@/i18n/helpers";
 import { LucideBuilding2, LucidePercent, LucideReceiptEuro } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+
+const localeIdMap = {
+  sr: "sta-je-dm2",
+  en: "about"
+}
 
 const About = () => {
   const t = useTranslations("Home")
-
+  const locale = useLocale();
   return (
-    <div id="sta-je-dm2" className="max-w-7xl mx-auto p-5 py-20">
+    <div id={localeIdAttribute(locale, localeIdMap)} className="max-w-7xl mx-auto p-5 py-20">
       <div className="grid grid-cols-2 gap-5">
         <div className="col-span-2 lg:col-span-1">
           <h2 className="text-4xl font-bold mb-7">{t.rich("about.title", { sup: (chunks) => <sup>{chunks}</sup> })}</h2>

@@ -2,10 +2,17 @@
 
 import Link from "next/link";
 import WaitlistDialog from "../common/waitlist-dialog";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { localeUrl } from "@/i18n/helpers";
+
+const localeUrlMap = {
+  sr: "#sta-je-dm2",
+  en: "#about"
+}
 
 const Hero = () => {
   const t = useTranslations("Home");
+  const locale = useLocale();
 
   return (
     // <div className="bg-[url('/dm2bg.png')] bg-cover bg-top">
@@ -23,7 +30,7 @@ const Hero = () => {
               {t("join-waitlist")}
             </div>
           </WaitlistDialog>
-          <Link href="#sta-je-dm2">
+          <Link href={localeUrl(locale, localeUrlMap)}>
             <button className="bg-zinc-100 font-bold px-8 py-3 rounded-xs">
               {t("learn-more")}
             </button>

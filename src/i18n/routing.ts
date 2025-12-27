@@ -7,10 +7,10 @@ export const routing = defineRouting({
   // Used when no locale matches
   defaultLocale: "sr",
   localePrefix: "as-needed",
-  // pathnames: {
-  //   "/": {
-  //     sr: "/",
-  //     en: "/en"
-  //   }
-  // }
+  pathnames: {
+    "/politika-privatnosti": {
+      sr: "/politika-privatnosti",
+      en: "/privacy-policy"
+    }
+  }
 });

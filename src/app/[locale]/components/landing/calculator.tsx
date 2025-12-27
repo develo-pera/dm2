@@ -1,12 +1,19 @@
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import Dm2Calculator from "../common/landing/dm2-calculator";
 import TokenCalculator from "../common/landing/token-calculator";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { localeIdAttribute } from "@/i18n/helpers";
+
+const localeIdMap = {
+  sr: "kalkulator",
+  en: "calculator"
+}
 
 const Calculator = () => {
   const t = useTranslations("Home")
+  const locale = useLocale();
   return (
-    <div id="kalkulator">
+    <div id={localeIdAttribute(locale, localeIdMap)}>
       <div className="max-w-7xl mx-auto p-5 py-20">
         <h2 className="text-4xl font-bold mb-7">{t("calculator.title")}</h2>
         <Tabs defaultValue="dm2">

@@ -6,12 +6,24 @@ import Socials from "./socials";
 import { MOBILE_NUMBER } from "@/lib/consts";
 import { useRef, useState } from "react";
 import { toast } from "sonner";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { localeIdAttribute, localeUrl } from "@/i18n/helpers";
+
+const localeUrlMap = {
+  sr: "/politika-privatnosti",
+  en: "/privacy-policy"
+}
+
+const localeIdMap = {
+  sr: "kontakt",
+  en: "contact"
+}
 
 const Footer = () => {
   const t = useTranslations("Home");
   const [sending, setSending] = useState(false);
   const emailRef = useRef<HTMLInputElement>(null);
+  const locale = useLocale();
 
   const handleSubscribe = async () => {
 
@@ -53,7 +65,7 @@ const Footer = () => {
         </div>
         <div className="max-w-md">
           <div className="mb-10">
-            <h3 id="kontakt" className="text-xl font-bold mb-5">{t("footer.contact-title")}</h3>
+            <h3 id={localeIdAttribute(locale, localeIdMap)} className="text-xl font-bold mb-5">{t("footer.contact-title")}</h3>
             <p className="mb-1">
               <span className="font-bold">Email:</span> <a href="mailto:info@decimetarkvadratni.com">info@decimetarkvadratni.com</a>
             </p>
@@ -76,7 +88,7 @@ const Footer = () => {
       <div className="bg-[#242424] text-white text-sm">
         <div className="max-w-7xl mx-auto p-5 flex flex-col sm:flex-row justify-between items-center gap-3">
           <div className="flex gap-4">
-            <Link href="/politika-privatnosti">{t("footer.privacy-policy")}</Link>
+            <Link href={localeUrl(locale, localeUrlMap)}>{t("footer.privacy-policy")}</Link>
             {/* <Link href="/">Odricanje od odgovornosti</Link> */}
           </div>
           <p>{t.rich("footer.copyright", { year: new Date().getFullYear(), sup: (chunks) => <sup>{chunks}</sup> })}</p>

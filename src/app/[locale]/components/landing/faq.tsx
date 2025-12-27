@@ -3,6 +3,12 @@ import { LucideChevronsUpDown } from "lucide-react";
 import FAQ from "./faq.json";
 import FAQEN from "./faq-en.json";
 import { useLocale, useTranslations } from "next-intl";
+import { localeIdAttribute } from "@/i18n/helpers";
+
+const localeIdMap = {
+  sr: "cesto-postavljana-pitanja",
+  en: "faq"
+}
 
 const Faq = () => {
   const t = useTranslations("Home");
@@ -11,7 +17,7 @@ const Faq = () => {
   const faq = locale === "en" ? FAQEN : FAQ;
 
   return (
-    <div id="cesto-postavljana-pitanja" className="max-w-7xl mx-auto p-5 py-20">
+    <div id={localeIdAttribute(locale, localeIdMap)} className="max-w-7xl mx-auto p-5 py-20">
       <h2 className="text-4xl font-bold mb-7">{t("faq.title")}</h2>
       <div className="border border-zinc-300 rounded-xs">
         {faq.faq.map((item, index) => (

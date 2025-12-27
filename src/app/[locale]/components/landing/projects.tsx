@@ -4,7 +4,8 @@ import { useState } from "react";
 import WaitlistDialog from "../common/waitlist-dialog";
 import NewsletterDialog from "../common/newsletter-dialog";
 import ProjectCard from "../common/project-card";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { localeIdAttribute } from "@/i18n/helpers";
 
 const images = [
   "/pierre1.png",
@@ -13,11 +14,16 @@ const images = [
   "/pierre4.png",
 ]
 
+const localeIdMap = {
+  sr: "planirani-projekti",
+  en: "upcoming-projects"
+}
+
 const Projects = () => {
   const t = useTranslations("Home")
-
+  const locale = useLocale();
   return (
-    <div id="projekti">
+    <div id={localeIdAttribute(locale, localeIdMap)}>
       <div className="max-w-7xl mx-auto p-5 py-20">
         <h2 className="text-4xl font-bold mb-7">{t("planned-projects.title")}</h2>
         <p>{t("planned-projects.paragraph-1")}</p>
