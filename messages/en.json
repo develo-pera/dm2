@@ -1,4 +1,23 @@
 {
+  "Metadata": {
+    "default": {
+      "title": "Real estate investing from €150 – Square decimeter",
+      "description": "Real estate investing made accessible to everyone. Instead of buying an entire property, invest in a fraction of a square meter and earn passive income of up to 30% annually.",
+      "openGraph": {
+        "title": "Real estate investing from €150 – Square decimeter",
+        "description": "Real estate investing made accessible to everyone. Instead of buying an entire property, invest in a fraction of a square meter and earn passive income of up to 30% annually.",
+        "imageUrl": "/dm2-og-image-en.jpg",
+        "imageAlt": "Square decimeter"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Real estate investing from €150 – Square decimeter",
+        "description": "Real estate investing made accessible to everyone. Instead of buying an entire property, invest in a fraction of a square meter and earn passive income of up to 30% annually",
+        "imageUrl": "/dm2-og-image-en.jpg",
+        "imageAlt": "Square decimeter"
+      }
+    }
+  },
   "Navigation": {
     "primary-cta": "Invest in real estate",
     "about": "About dm<sup>2</sup>",

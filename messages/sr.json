@@ -1,4 +1,23 @@
 {
+  "Metadata": {
+    "default": {
+      "title": "Investiranje u nekretnine već od 150€ - Decimetar kvadratni",
+      "description": "Investiranje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
+      "openGraph": {
+        "title": "Investiranje u nekretnine već od 150€ - Decimetar kvadratni",
+        "description": "Investiranje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
+        "imageUrl": "/dm2-og-image.jpg",
+        "imageAlt": "Decimetar kvadratni"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Investiranje u nekretnine već od 150€ - Decimetar kvadratni",
+        "description": "Investiranje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
+        "imageUrl": "/dm2-og-image.jpg",
+        "imageAlt": "Decimetar kvadratni"
+      }
+    }
+  },
   "Navigation": {
     "primary-cta": "Uložite u nekretnine",
     "about": "Šta je dm<sup>2</sup>",

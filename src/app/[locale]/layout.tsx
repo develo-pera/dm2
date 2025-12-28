@@ -7,7 +7,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -50,32 +50,76 @@ const incise = localFont({
   variable: '--font-incise',
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://decimetarkvadratni.com"),
-  alternates: {
-    canonical: "/",
-    languages: {
-      "sr": "/"
-    }
-  },
-  title: "Investiranje u nekretnine već od 150€ - Decimetar kvadratni",
-  description: "Investiranje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
-  openGraph: {
-    title: "Investiranje u nekretnine već od 150€ - Decimetar kvadratni",
-    description: "Investiranje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
-    images: [{
-      url: "/dm2-og-image.jpg",
-      width: 1920,
-      height: 1080,
-      alt: "Decimetar kvadratni"
-    }]
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Investiranje u nekretnine već od 150€ - Decimetar kvadratni",
-    description: "Investiranje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
-  },
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
+
+  return {
+    metadataBase: "https://decimetarkvadratni.com",
+    alternates: {
+      canonical: "/",
+      languages: {
+        "sr": "/",
+        "en": "/en"
+      }
+    },
+    title: t('default.title'),
+    description: t('default.description'),
+    openGraph: {
+      title: t('default.openGraph.title'),
+      description: t('default.openGraph.description'),
+      images: [
+        {
+          url: t('default.openGraph.imageUrl'),
+          alt: t('default.openGraph.imageAlt'),
+          width: 1920,
+          height: 1080,
+        }
+      ],
+    },
+    twitter: {
+      card: t('default.twitter.card'),
+      title: t('default.twitter.title'),
+      description: t('default.twitter.description'),
+      images: [
+        {
+          url: t('default.twitter.imageUrl'),
+          alt: t('default.twitter.imageAlt'),
+          width: 1920,
+          height: 1080,
+        }
+      ],
+    },
+  };
+}
+
+// export const metadata: Metadata = {
+//   metadataBase: new URL("https://decimetarkvadratni.com"),
+//   alternates: {
+//     canonical: "/",
+//     languages: {
+//       "sr": "/",
+//       "en": "/en"
+//     }
+//   },
+//   title: "Investiranje u nekretnine već od 150€ - Decimetar kvadratni",
+//   description: "Investiranje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
+//   openGraph: {
+//     title: "Investiranje u nekretnine već od 150€ - Decimetar kvadratni",
+//     description: "Investiranje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
+//     images: [{
+//       url: "/dm2-og-image.jpg",
+//       width: 1920,
+//       height: 1080,
+//       alt: "Decimetar kvadratni"
+//     }]
+//   },
+//   twitter: {
+//     card: "summary_large_image",
+//     title: "Investiranje u nekretnine već od 150€ - Decimetar kvadratni",
+//     description: "Investiranje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
+//   },
+// };
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -84,9 +128,11 @@ export function generateStaticParams() {
 export default async function RootLayout({
   children,
   params,
+  metadata,
 }: Readonly<{
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
+  metadata: Metadata;
 }>) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
@@ -95,6 +141,8 @@ export default async function RootLayout({
 
   // Enable static rendering
   setRequestLocale(locale);
+
+  console.log(metadata);
 
   return (
     <html lang={locale}>
