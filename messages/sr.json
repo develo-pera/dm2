@@ -21,7 +21,7 @@
   "Navigation": {
     "primary-cta": "Uložite u nekretnine",
     "about": "Šta je dm<sup>2</sup>",
-    "how-it-works": "Kako radi dm2",
+    "how-it-works": "Kako radi dm<sup>2</sup>",
     "token": "DM2 token",
     "calculator": "Kalkulator",
     "projects": "Planirani projekti",
@@ -90,7 +90,7 @@
       "profit-sharing-paragraph-3": "To znači da se po svakom kvadratu ostvaruje profit od 1000€, koji se deli na sledeći način:",
       "profit-sharing-paragraph-4": "600€ ide investitorima u projekat (40% profita)",
       "profit-sharing-paragraph-5": "200€ ide investitorima u DM2 tokene",
-      "profit-sharing-paragraph-6": "200€ ide timu koji vodi projekat (nosilac projekta)",
+      "profit-sharing-paragraph-6": "200€ ide developeru građevinskog projekta",
       "profit-sharing-paragraph-7": "Investitorima u projekat se tako vraća njihov ulog od 1.500€ + dodatnih 600€ zarade, što znači da ukupno dobijaju 2.100€ po kvadratu, tj. ostvaraju profit od 40% u odnosu na njihov ulog.",
       "profit-sharing-table-1-title": "Ključ u ruke kvadrat",
       "profit-sharing-table-1-item-1": "Cena izgradnje",
@@ -104,7 +104,7 @@
       "profit-sharing-table-2-price-1": "600€",
       "profit-sharing-table-2-item-2": "Investitori u DM2 token",
       "profit-sharing-table-2-price-2": "200€",
-      "profit-sharing-table-2-item-3": "Nosilac projekta (dm<sup>2</sup> platforma)",
+      "profit-sharing-table-2-item-3": "Nosilac projekta (developer)",
       "profit-sharing-table-2-price-3": "200€"
     },
     "token": {
@@ -136,7 +136,7 @@
       "dm2-calculator-paragraph-2-price": "Na osnovu cene m<sup>2</sup> u izgradnji koju ste uneli, cena 1 decimetra kvadratnog iznosi <price></price> €",
       "dm2-calculator-paragraph-3": "Prodajna cena m<sup>2</sup>",
       "dm2-calculator-result-title": "Rezultat kalkulacije - decimetar kvadratni",
-      "dm2-calculator-result-paragraph-1": "Investitori u decimetre kvadratne ostvaruju 60% od profita nakon prodaje, dok se preostalih 40% deli na nosioca projekta i investitore u digitalne tokene.",
+      "dm2-calculator-result-paragraph-1": "Investitori u decimetre kvadratne ostvaruju 60% od profita nakon prodaje, dok se preostalih 40% deli na developera i investitore u digitalne tokene.",
       "dm2-calculator-result-paragraph-2": "Vaš ulog",
       "dm2-calculator-result-paragraph-3": "Vaš profit",
       "dm2-calculator-result-paragraph-4": "Ukupno dobijate",
