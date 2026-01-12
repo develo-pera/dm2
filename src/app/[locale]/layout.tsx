@@ -93,34 +93,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-// export const metadata: Metadata = {
-//   metadataBase: new URL("https://decimetarkvadratni.com"),
-//   alternates: {
-//     canonical: "/",
-//     languages: {
-//       "sr": "/",
-//       "en": "/en"
-//     }
-//   },
-//   title: "Investiranje u nekretnine već od 150€ - Decimetar kvadratni",
-//   description: "Investiranje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
-//   openGraph: {
-//     title: "Investiranje u nekretnine već od 150€ - Decimetar kvadratni",
-//     description: "Investiranje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
-//     images: [{
-//       url: "/dm2-og-image.jpg",
-//       width: 1920,
-//       height: 1080,
-//       alt: "Decimetar kvadratni"
-//     }]
-//   },
-//   twitter: {
-//     card: "summary_large_image",
-//     title: "Investiranje u nekretnine već od 150€ - Decimetar kvadratni",
-//     description: "Investiranje u nekretnine dostupno svima. Umesto kupovine cele nekretnine, investirajte u deo kvadrata i ostvarite pasivan prihod i do 30% godišnje",
-//   },
-// };
-
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -128,11 +100,9 @@ export function generateStaticParams() {
 export default async function RootLayout({
   children,
   params,
-  metadata,
 }: Readonly<{
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
-  metadata: Metadata;
 }>) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
@@ -141,8 +111,6 @@ export default async function RootLayout({
 
   // Enable static rendering
   setRequestLocale(locale);
-
-  console.log(metadata);
 
   return (
     <html lang={locale}>
