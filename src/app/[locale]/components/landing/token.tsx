@@ -20,8 +20,8 @@ const Token = () => {
         <div className="my-10 grid lg:grid-cols-2 gap-5">
           <div>
             <p className="font-bold">{t.rich("token.paragraph-1", { sup: (chunks) => <sup>{chunks}</sup> })}</p>
-            <p>{t("token.paragraph-2")}</p>
-            <p className="mb-3">{t("token.paragraph-3")}</p>
+            <p> - {t("token.paragraph-2")}</p>
+            <p className="mb-3"> - {t("token.paragraph-3")}</p>
 
             <p className="font-bold">{t("token.paragraph-4")}</p>
             <p className="mb-3">
