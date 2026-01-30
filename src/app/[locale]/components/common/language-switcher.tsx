@@ -1,40 +1,50 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
-import { usePathname } from 'next/navigation';
 import { useLocale } from 'next-intl';
+import { usePathname } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
-  const router = useRouter();
-  const currentPathname = usePathname();
+  const pathname = usePathname(); // This returns pathname without locale prefix
+  const pathnameStr = pathname as string; // Cast to string to avoid type issues
 
-  const handleValueChange = (value: string) => {
-    console.log(value)
-    console.log(locale)
-    const newLocale = value;
+  const handleValueChange = (newLocale: string) => {
+    // usePathname() returns pathname without locale prefix, but we need to ensure
+    // it doesn't start with a locale prefix (in case of edge cases)
+    let cleanPathname = pathnameStr;
 
-    // set cookie for next-i18n-router
-    const days = 30;
-    const date = new Date();
-    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-    document.cookie = `NEXT_LOCALE=${newLocale};expires=${date.toUTCString()};path=/`;
-
-    // redirect to the new locale path
-    if (
-      locale === routing.defaultLocale &&
-      routing.localePrefix !== 'as-needed'
-    ) {
-      router.push('/' + newLocale + currentPathname);
-    } else {
-      router.push(
-        currentPathname.replace(`/${locale}`, `/${newLocale}`)
-      );
+    // Remove any existing locale prefix if present
+    if (cleanPathname.startsWith('/en/') || cleanPathname === '/en') {
+      cleanPathname = cleanPathname.replace(/^\/en/, '') || '/';
+    }
+    if (cleanPathname.startsWith('/sr/') || cleanPathname === '/sr') {
+      cleanPathname = cleanPathname.replace(/^\/sr/, '') || '/';
     }
 
-    router.refresh();
+    // Handle custom pathnames (e.g., /politika-privatnosti -> /privacy-policy)
+    let targetPathname = cleanPathname;
+    if (cleanPathname === '/politika-privatnosti' && newLocale === 'en') {
+      targetPathname = '/privacy-policy';
+    } else if (cleanPathname === '/privacy-policy' && newLocale === 'sr') {
+      targetPathname = '/politika-privatnosti';
+    }
+
+    // For as-needed locale prefix:
+    // - Default locale (sr) has no prefix: / or /some-path
+    // - Non-default locale (en) has prefix: /en or /en/some-path
+    let newPath: string;
+    if (newLocale === routing.defaultLocale) {
+      // Switching to default locale - no prefix needed
+      newPath = targetPathname;
+    } else {
+      // Switching to non-default locale - add prefix
+      newPath = `/${newLocale}${targetPathname}`;
+    }
+
+    // Use window.location for navigation
+    window.location.href = newPath;
   };
 
   return (

@@ -60,7 +60,13 @@ const Footer = () => {
     <div className="bg-zinc-100/50 text-black">
       <div className="max-w-7xl mx-auto p-5 py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15">
         <div className="max-w-md">
-          <Image src="/dm2-logo.svg" alt="dm2" width={250} height={100} />
+          {
+            locale === 'sr' ? (
+              <Image src="/dm2-logo.svg" alt="dm2" width={200} height={80} />
+            ) : (
+              <Image src="/dm2-logo-en.svg" alt="dm2" width={200} height={80} />
+            )
+          }
           <p className="text-sm mt-5">{t.rich("footer.description", { sup: (chunks) => <sup>{chunks}</sup> })}</p>
         </div>
         <div className="max-w-md">
