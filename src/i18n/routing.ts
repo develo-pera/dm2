@@ -7,6 +7,7 @@ export const routing = defineRouting({
   // Used when no locale matches
   defaultLocale: "sr",
   localePrefix: "as-needed",
+  localeDetection: false,
   pathnames: {
     "/politika-privatnosti": {
       sr: "/politika-privatnosti",
