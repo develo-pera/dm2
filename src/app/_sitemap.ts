@@ -3,26 +3,55 @@ export const dynamic = 'force-dynamic';
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://decimetarkvadratni.com';
+  const now = new Date();
+
   return [
     {
-      url: 'https://decimetarkvadratni.com',
-      lastModified: new Date(),
+      url: baseUrl, // Serbian homepage (default, no prefix)
+      lastModified: now,
       changeFrequency: 'monthly',
       priority: 1,
       alternates: {
         languages: {
-          sr: 'https://decimetarkvadratni.com',
+          sr: baseUrl,
+          en: `${baseUrl}/en`,
         }
       },
     },
     {
-      url: 'https://decimetarkvadratni.com/politika-privatnosti',
-      lastModified: new Date(),
+      url: `${baseUrl}/en`, // English homepage
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 1,
+      alternates: {
+        languages: {
+          sr: baseUrl,
+          en: `${baseUrl}/en`,
+        }
+      },
+    },
+    {
+      url: `${baseUrl}/politika-privatnosti`, // Serbian privacy policy
+      lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.5,
       alternates: {
         languages: {
-          sr: 'https://decimetarkvadratni.com/politika-privatnosti',
+          sr: `${baseUrl}/politika-privatnosti`,
+          en: `${baseUrl}/en/privacy-policy`,
+        }
+      },
+    },
+    {
+      url: `${baseUrl}/en/privacy-policy`, // English privacy policy
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.5,
+      alternates: {
+        languages: {
+          sr: `${baseUrl}/politika-privatnosti`,
+          en: `${baseUrl}/en/privacy-policy`,
         }
       },
     }
