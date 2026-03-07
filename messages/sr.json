@@ -151,7 +151,8 @@
       "token-calculator-result-paragraph-2": "Vaš ulog",
       "token-calculator-result-paragraph-2-projects": "Broj realizovanih projekata",
       "token-calculator-result-paragraph-3": "Vaš profit nakon {projects} projekta",
-      "token-calculator-result-paragraph-4": "Ukupan iznos na Vašem nalogu"
+      "token-calculator-result-paragraph-4": "Ukupan iznos na Vašem nalogu",
+      "current-eur-exchange-rate": "Trenutni kurs EUR možete pogledati na sledećem linku <link>kursvaluta.com</link>"
     },
     "planned-projects": {
       "title": "Planirane nekretnine i projekti",

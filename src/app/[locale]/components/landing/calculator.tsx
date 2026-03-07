@@ -29,7 +29,7 @@ const Calculator = () => {
             <TokenCalculator />
           </TabsContent>
         </Tabs>
-
+        <p className="text-sm text-zinc-500 mt-10">{t.rich("calculator.current-eur-exchange-rate", { link: (chunks) => <a href="https://kursvaluta.com" target="_blank" rel="noopener noreferrer" className="underline">{chunks}</a> })}</p>
       </div>
     </div>
   );
