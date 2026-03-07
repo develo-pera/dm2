@@ -151,7 +151,8 @@
       "token-calculator-result-paragraph-2": "Your investment",
       "token-calculator-result-paragraph-2-projects": "Number of completed projects",
       "token-calculator-result-paragraph-3": "Your potential profit after {projects} completed project{projects, plural, =1 { } other {s}}",
-      "token-calculator-result-paragraph-4": "Total amount in your account"
+      "token-calculator-result-paragraph-4": "Total amount in your account",
+      "current-eur-exchange-rate": "For current EUR exchange rate, please check the following link <link>kursvaluta.com</link>"
     },
     "planned-projects": {
       "title": "Planned properties and projects",
